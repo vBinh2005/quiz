@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "chuyen-de-1",
+    "title": "Chuyên đề 1: Tổng quan, Mô hình CIA, AAA & Nguyên tắc bảo mật",
+    "description": "Các khái niệm nền tảng về an toàn thông tin, tam giác CIA, mô hình AAA và các nguyên tắc thiết kế bảo mật kinh điển.",
+    "badge": "25 câu hỏi",
+    "questions": [
+      {
+        "id": 101,
+        "question": "Bộ ba mục tiêu cốt lõi của an toàn thông tin (mô hình C.I.A Triad) bao gồm những yếu tố nào?",
+        "options": [
+          "Confidentiality - Integrity - Availability (Bí mật - Toàn vẹn - Sẵn sàng)",
+          "Control - Identification - Availability (Kiểm soát - Định danh - Sẵn sàng)",
+          "Confidentiality - Authorization - Audit (Bí mật - Ủy quyền - Kiểm toán)",
+          "Authentication - Integrity - Access (Xác thực - Toàn vẹn - Truy cập)"
+        ],
+        "answer": 0,
+        "explanation": "Mô hình CIA kinh điển bao gồm: Confidentiality (Tính bí mật - chỉ người có quyền mới đọc được), Integrity (Tính toàn vẹn - dữ liệu không bị sửa đổi trái phép), và Availability (Tính sẵn sàng - hệ thống luôn hoạt động khi cần)."
+      },
+      {
+        "id": 102,
+        "question": "Hành vi cố ý chặn đường truyền và sửa đổi số tiền trên hóa đơn điện tử vi phạm trực tiếp mục tiêu an toàn nào?",
+        "options": [
+          "Tính bí mật (Confidentiality)",
+          "Tính toàn vẹn (Integrity)",
+          "Tính sẵn sàng (Availability)",
+          "Tính chống chối bỏ (Non-repudiation)"
+        ],
+        "answer": 1,
+        "explanation": "Tính toàn vẹn (Integrity) đảm bảo thông tin chính xác, nguyên vẹn và không bị thay đổi, giả mạo bởi bên thứ ba trái phép trong quá trình lưu trữ hoặc truyền tải."
+      },
+      {
+        "id": 103,
+        "question": "Cuộc tấn công từ chối dịch vụ phân tán (DDoS) nhằm phá hủy mục tiêu bảo mật nào trong mô hình CIA?",
+        "options": [
+          "Tính bí mật (Confidentiality)",
+          "Tính toàn vẹn (Integrity)",
+          "Tính sẵn sàng (Availability)",
+          "Tính xác thực (Authentication)"
+        ],
+        "answer": 2,
+        "explanation": "DDoS làm cạn kiệt tài nguyên máy chủ (băng thông, CPU, RAM) khiến người dùng hợp pháp không thể truy cập dịch vụ, tức là phá vỡ tính sẵn sàng (Availability)."
+      },
+      {
+        "id": 104,
+        "question": "Mô hình A.A.A trong bảo mật hệ thống bao gồm 3 thành phần nào?",
+        "options": [
+          "Authentication - Authorization - Accounting (Xác thực - Phân quyền - Ghi nhật ký)",
+          "Authentication - Access - Audit (Xác thực - Truy cập - Kiểm toán)",
+          "Authorization - Availability - Assessment (Ủy quyền - Sẵn sàng - Đánh giá)",
+          "Administration - Accounting - Alert (Quản trị - Tính cước - Cảnh báo)"
+        ],
+        "answer": 0,
+        "explanation": "Mô hình AAA: Authentication (Bạn là ai?), Authorization (Bạn được phép làm gì?), Accounting/Auditing (Bạn đã làm những gì vào thời điểm nào?)."
+      },
+      {
+        "id": 105,
+        "question": "Nguyên tắc 'Least Privilege' (Đặc quyền tối thiểu) yêu cầu điều gì?",
+        "options": [
+          "Cấp quyền tối đa cho mọi tài khoản để không bị gián đoạn công việc",
+          "Chỉ cấp cho người dùng hoặc tiến trình mức quyền hạn thấp nhất vừa đủ để hoàn thành nhiệm vụ được giao",
+          "Không phân bất kỳ quyền hạn nào cho người dùng nội bộ",
+          "Chỉ người quản trị cao nhất mới có quyền sử dụng máy tính"
+        ],
+        "answer": 1,
+        "explanation": "Nguyên tắc Least Privilege giúp giảm thiểu thiệt hại nếu tài khoản bị thỏa hiệp hoặc tiến trình bị khai thác lỗ hổng (kẻ tấn công chỉ có quyền hạn tối thiểu của tiến trình đó)."
+      },
+      {
+        "id": 106,
+        "question": "Nguyên tắc 'Defense in Depth' (Phòng thủ theo chiều sâu) trong thiết kế hệ thống có ý nghĩa là:",
+        "options": [
+          "Đầu tư vào một bức tường lửa đắt tiền nhất và bỏ qua các lớp khác",
+          "Sử dụng nhiều tầng lớp bảo vệ độc lập (tường lửa, IPS, mã hóa, phân quyền, diệt virus) để nếu một lớp thất thủ thì các lớp khác vẫn ngăn chặn được",
+          "Đặt máy chủ dữ liệu ở sâu dưới tầng hầm để chống trộm",
+          "Chỉ áp dụng bảo mật ở tầng mạng bên ngoài"
+        ],
+        "answer": 1,
+        "explanation": "Defense in Depth không tin tưởng vào một cơ chế duy nhất mà phối hợp nhiều rào cản độc lập ở các tầng mạng, máy chủ, ứng dụng và dữ liệu."
+      },
+      {
+        "id": 107,
+        "question": "Nguyên tắc 'Fail-Safe Defaults' trong kiểm soát truy cập nghĩa là:",
+        "options": [
+          "Khi hệ thống gặp sự cố, mặc định mở toang mọi quyền truy cập",
+          "Mặc định từ chối tất cả (Deny by default), quyền truy cập chỉ được cấp khi có quy tắc rõ ràng",
+          "Khi có lỗi xảy ra, hệ thống tự động khởi động lại mà không cần lưu log",
+          "Mặc định cho phép tất cả mọi truy cập nội bộ"
+        ],
+        "answer": 1,
+        "explanation": "Fail-safe defaults quy định trạng thái mặc định phải là an toàn nhất (Từ chối truy cập / Whitelist), nếu xảy ra lỗi cấu hình hoặc logic thì hành động vẫn bị chặn thay vì mở ra."
+      },
+      {
+        "id": 108,
+        "question": "Nguyên tắc 'Separation of Duties' (Phân tách trách nhiệm) nhằm mục đích gì?",
+        "options": [
+          "Giúp nhân viên làm việc nhanh hơn bằng cách bỏ qua bước duyệt",
+          "Yêu cầu từ hai người trở lên cùng tham gia để hoàn thành một nhiệm vụ quan trọng nhằm ngăn ngừa gian lận và sai sót",
+          "Tách biệt mạng Wi-Fi của công ty với mạng khách",
+          "Cho phép một người có thể tự tạo và tự duyệt thanh toán"
+        ],
+        "answer": 1,
+        "explanation": "Separation of Duties (SoD) ngăn chặn tình trạng một cá nhân lạm dụng quyền lực đơn phương thực hiện hành vi gian lận (ví dụ: người lập phiếu chi không thể đồng thời là người duyệt chi)."
+      },
+      {
+        "id": 109,
+        "question": "Mô hình bảo mật Zero Trust dựa trên phương châm cốt lõi nào?",
+        "options": [
+          "Trust but verify (Tin tưởng nhưng có kiểm tra)",
+          "Never trust, always verify (Không bao giờ tin tưởng, luôn luôn xác thực)",
+          "Tin tưởng tuyệt đối lưu lượng bên trong mạng nội bộ (LAN)",
+          "Chỉ xác thực một lần duy nhất lúc đăng nhập vào mạng"
+        ],
+        "answer": 1,
+        "explanation": "Zero Trust loại bỏ khái niệm vùng mạng tin cậy. Dù yêu cầu xuất phát từ mạng nội bộ hay Internet, mọi truy cập đều phải được xác thực, ủy quyền và mã hóa liên tục."
+      },
+      {
+        "id": 110,
+        "question": "Trong mô hình kiểm soát truy cập dựa trên vai trò (RBAC - Role-Based Access Control), quyền hạn được gán cho:",
+        "options": [
+          "Từng cá nhân cụ thể theo tên",
+          "Các vai trò (Roles) trong tổ chức, sau đó người dùng được gán vào các vai trò tương ứng",
+          "Địa chỉ IP của thiết bị truy cập",
+          "Thời gian người dùng đăng nhập trong ngày"
+        ],
+        "answer": 1,
+        "explanation": "RBAC phân tách quyền vào các Vai trò (Admin, Manager, Student, Teacher...). Khi nhân viên thay đổi vị trí, quản trị viên chỉ cần đổi vai trò mà không cần chỉnh sửa từng quyền chi tiết."
+      },
+      {
+        "id": 111,
+        "question": "Mô hình kiểm soát truy cập bắt buộc (MAC - Mandatory Access Control) thường được áp dụng trong môi trường nào?",
+        "options": [
+          "Website thương mại điện tử công cộng",
+          "Hệ thống quân sự, tình báo, quốc phòng với các nhãn bảo mật (Top Secret, Secret, Confidential)",
+          "Mạng gia đình chia sẻ file qua Samba",
+          "Diễn đàn mạng xã hội mã nguồn mở"
+        ],
+        "answer": 1,
+        "explanation": "MAC là mô hình kiểm soát truy cập nghiêm ngặt nhất dựa trên nhãn an ninh do hệ thống áp đặt, người sở hữu tài liệu không được tự ý chuyển quyền cho người khác."
+      },
+      {
+        "id": 112,
+        "question": "Hành vi kẻ tấn công gửi email mạo danh ngân hàng yêu cầu nạn nhân bấm vào link để đổi mật khẩu gọi là:",
+        "options": [
+          "Phishing (Tấn công lừa đảo)",
+          "DDoS (Từ chối dịch vụ)",
+          "Man-in-the-Middle",
+          "Buffer Overflow"
+        ],
+        "answer": 0,
+        "explanation": "Phishing là kỹ thuật phi kỹ thuật (Social Engineering) lừa gạt người dùng tiết lộ thông tin nhạy cảm qua email/website giả mạo."
+      },
+      {
+        "id": 113,
+        "question": "Trong mô hình đe dọa STRIDE của Microsoft, chữ 'R' viết tắt cho mối đe dọa nào?",
+        "options": [
+          "Redirection (Chuyển hướng)",
+          "Repudiation (Tính chối bỏ trách nhiệm)",
+          "Replay attack (Tấn công phát lại)",
+          "Remote execution (Thực thi từ xa)"
+        ],
+        "answer": 1,
+        "explanation": "STRIDE: Spoofing (Giả mạo), Tampering (Can thiệp), Repudiation (Chối bỏ), Information Disclosure (Lộ thông tin), Denial of Service (Từ chối dịch vụ), Elevation of Privilege (Nâng quyền)."
+      },
+      {
+        "id": 114,
+        "question": "Xác thực hai yếu tố (2FA / MFA) kết hợp tối thiểu hai trong ba yếu tố nào sau đây?",
+        "options": [
+          "Mật khẩu dài và Mật khẩu ngắn",
+          "Điều bạn biết (Know), Điều bạn có (Have), Điều bạn là (Are)",
+          "Tên người dùng, Địa chỉ email và Số điện thoại",
+          "Địa chỉ IP tĩnh và Trình duyệt Chrome"
+        ],
+        "answer": 1,
+        "explanation": "3 yếu tố xác thực: Something you know (mật khẩu/PIN), Something you have (điện thoại/token OTP/smart card), Something you are (sinh trắc học: vân tay, khuôn mặt)."
+      },
+      {
+        "id": 115,
+        "question": "Một nhân viên IT rời công ty nhưng tài khoản vẫn hoạt động và sau đó đăng nhập lấy cắp dữ liệu. Đây là loại mối đe dọa nào?",
+        "options": [
+          "Insider Threat (Mối đe dọa nội bộ)",
+          "Zero-day Attack",
+          "Supply Chain Attack",
+          "Eavesdropping"
+        ],
+        "answer": 0,
+        "explanation": "Mối đe dọa nội bộ (Insider Threat) đến từ các nhân sự hiện tại hoặc cựu nhân viên có kiến thức và quyền truy cập vào hạ tầng doanh nghiệp."
+      },
+      {
+        "id": 116,
+        "question": "Nguyên tắc 'Economy of Mechanism' trong an ninh phần mềm khuyên rằng:",
+        "options": [
+          "Hệ thống bảo mật phải được mua với giá rẻ nhất",
+          "Thiết kế cơ chế bảo vệ càng đơn giản và tinh gọn càng tốt vì thiết kế phức tạp dễ phát sinh lỗi tiềm ẩn",
+          "Giảm bớt lương của đội ngũ an ninh mạng",
+          "Tiết kiệm tài nguyên phần cứng bằng cách tắt tường lửa"
+        ],
+        "answer": 1,
+        "explanation": "Economy of Mechanism (Đơn giản hóa cơ chế): Hệ thống càng phức tạp thì càng khó kiểm thử và càng có nhiều kẽ hở cho kẻ tấn công khai thác."
+      },
+      {
+        "id": 117,
+        "question": "Quá trình kiểm tra để đảm bảo người dùng chỉ được xem điểm của chính mình chứ không xem được điểm của sinh viên khác gọi là:",
+        "options": [
+          "Identification (Định danh)",
+          "Authentication (Xác thực)",
+          "Authorization (Phân quyền / Kiểm soát truy cập)",
+          "Accounting (Kế toán)"
+        ],
+        "answer": 2,
+        "explanation": "Xác thực (Authentication) chỉ kiểm tra bạn là ai. Phân quyền (Authorization) quyết định bạn có quyền đọc/sửa tài nguyên cụ thể nào."
+      },
+      {
+        "id": 118,
+        "question": "Hành động ghi lại nhật ký (Log) truy cập máy chủ kèm địa chỉ IP, thời gian và hành vi của người dùng phục vụ cho mục tiêu nào?",
+        "options": [
+          "Tăng tốc độ tải trang",
+          "Accounting & Non-repudiation (Kiểm toán và Chống chối bỏ)",
+          "Giải phóng dung lượng ổ cứng",
+          "Ngăn chặn hoàn toàn hacker tấn công"
+        ],
+        "answer": 1,
+        "explanation": "Ghi log đầy đủ giúp điều tra khi xảy ra sự cố (forensics) và đảm bảo tính chống chối bỏ: người dùng không thể phủ nhận hành vi mình đã thực hiện."
+      },
+      {
+        "id": 119,
+        "question": "Khái niệm 'Attack Surface' (Bề mặt tấn công) của một ứng dụng phần mềm là:",
+        "options": [
+          "Diện tích màn hình giao diện người dùng",
+          "Tổng thể tất cả các điểm vào (endpoints, ports, inputs, APIs) mà kẻ tấn công có thể cố gắng khai thác",
+          "Số lượng máy chủ cơ sở dữ liệu",
+          "Độ dày của lớp vỏ bảo vệ máy chủ vật lý"
+        ],
+        "answer": 1,
+        "explanation": "Attack Surface là toàn bộ các điểm tiếp xúc mà kẻ tấn công có thể gửi dữ liệu vào hoặc trích xuất dữ liệu ra. Giảm bề mặt tấn công là nguyên tắc bảo mật cơ bản."
+      },
+      {
+        "id": 120,
+        "question": "Quy trình SSDLC (Secure Software Development Life Cycle) là gì?",
+        "options": [
+          "Quy trình kiểm tra bảo mật chỉ thực hiện một lần duy nhất trước ngày bàn giao sản phẩm",
+          "Quy trình tích hợp các hoạt động bảo mật vào tất cả các giai đoạn phát triển phần mềm từ lập kế hoạch, thiết kế, code đến triển khai",
+          "Phần mềm tự động viết mã nguồn an toàn không cần lập trình viên",
+          "Tiêu chuẩn phần cứng máy chủ an toàn"
+        ],
+        "answer": 1,
+        "explanation": "SSDLC (Shift-left security) tích hợp đánh giá an ninh từ khâu thiết kế (Threat modeling), code review, kiểm thử tĩnh/động cho đến khi vận hành."
+      },
+      {
+        "id": 121,
+        "question": "Nguyên tắc 'Open Design' (Thiết kế mở) của Saltzer và Schroeder khẳng định:",
+        "options": [
+          "Toàn bộ dữ liệu mật khẩu phải được công khai cho cộng đồng",
+          "Tính an toàn của hệ thống không nên phụ thuộc vào việc giữ bí mật thuật toán hoặc thiết kế (Security through obscurity là sai lầm)",
+          "Mã nguồn mở luôn chứa nhiều virus hơn mã nguồn đóng",
+          "Không cần đặt mật khẩu cho cơ sở dữ liệu"
+        ],
+        "answer": 1,
+        "explanation": "Nguyên tắc Kerckhoffs / Open Design: Thiết kế phải an toàn ngay cả khi kẻ địch biết rõ cấu trúc của nó; thứ duy nhất cần giữ bí mật là Khóa (Key)."
+      },
+      {
+        "id": 122,
+        "question": "Khi người dùng bị tấn công Man-in-the-Middle (MitM) trên mạng Wi-Fi công cộng, kẻ tấn công có thể làm gì?",
+        "options": [
+          "Nghe lén và có thể thay đổi dữ liệu trao đổi giữa nạn nhân và máy chủ nếu không có mã hóa TLS/HTTPS",
+          "Tự động format ổ cứng của nạn nhân từ xa ngay lập tức",
+          "Tăng tốc độ kết nối của nạn nhân lên gấp đôi",
+          "Chỉ có thể xem được địa chỉ MAC của nạn nhân mà không xem được dữ liệu"
+        ],
+        "answer": 0,
+        "explanation": "Trong tấn công MitM, kẻ tấn công chen vào giữa luồng truyền thông, đọc trộm dữ liệu nhạy cảm (cookie, mật khẩu) và có thể sửa đổi nội dung phản hồi."
+      },
+      {
+        "id": 123,
+        "question": "Kỹ thuật 'Social Engineering' (Tấn công phi kỹ thuật) nhắm vào điểm yếu nào lớn nhất trong hệ thống bảo mật?",
+        "options": [
+          "Lỗ hổng trong phần mềm hệ điều hành Linux",
+          "Yếu tố con người (sự bất cẩn, cả tin, thiếu hiểu biết)",
+          "Phần cứng vi xử lý bị lỗi thiết kế",
+          "Dây cáp mạng quang bị đứt ngầm"
+        ],
+        "answer": 1,
+        "explanation": "Con người luôn được coi là mắt xích yếu nhất trong chuỗi bảo mật. Dù hệ thống kỹ thuật hiện đại đến đâu, nếu nhân viên bị lừa giao mật khẩu thì bảo mật sụp đổ."
+      },
+      {
+        "id": 124,
+        "question": "Để bảo vệ tính toàn vẹn của một tập tin tải về từ Internet, nhà phát hành thường cung cấp thêm thông tin gì?",
+        "options": [
+          "Mã checksum/hash (MD5, SHA-256) của tập tin",
+          "Số điện thoại của người viết phần mềm",
+          "Hình ảnh chụp màn hình tập tin",
+          "Địa chỉ IP máy chủ lưu trữ"
+        ],
+        "answer": 0,
+        "explanation": "Người dùng tính toán mã hash của file tải về và so sánh với mã hash nhà phát hành cung cấp. Nếu khớp nghĩa là file không bị hỏng hoặc chèn mã độc."
+      },
+      {
+        "id": 125,
+        "question": "Mục đích chính của chính sách khóa tài khoản (Account Lockout) sau nhiều lần nhập sai mật khẩu là:",
+        "options": [
+          "Tiết kiệm bộ nhớ RAM của máy chủ",
+          "Ngăn chặn các cuộc tấn công dò mật khẩu tự động (Brute-force / Dictionary attack)",
+          "Buộc người dùng phải mua tài khoản VIP",
+          "Chống tấn công từ chối dịch vụ DDoS"
+        ],
+        "answer": 1,
+        "explanation": "Chính sách khóa tạm thời (ví dụ khóa 15 phút sau 5 lần gõ sai) làm tê liệt các công cụ đoán mật khẩu tự động tốc độ cao."
+      }
+    ]
+  },
+  {
+    "id": "chuyen-de-2",
+    "title": "Chuyên đề 2: Lỗ hổng ứng dụng Web & OWASP Top 10",
+    "description": "Các kỹ thuật tấn công và biện pháp phòng chống các lỗ hổng web phổ biến nhất: SQL Injection, XSS, CSRF, IDOR, SSRF, Command Injection...",
+    "badge": "30 câu hỏi",
+    "questions": [
+      {
+        "id": 201,
+        "question": "Lỗ hổng SQL Injection xảy ra do nguyên nhân chủ yếu nào?",
+        "options": [
+          "Do máy chủ cơ sở dữ liệu bị mất điện đột ngột",
+          "Do ứng dụng ghép nối trực tiếp chuỗi nhập liệu của người dùng vào câu truy vấn SQL mà không kiểm tra hoặc tham số hóa",
+          "Do phiên bản MySQL quá mới",
+          "Do mạng Internet có độ trễ cao"
+        ],
+        "answer": 1,
+        "explanation": "SQLi xảy ra khi dữ liệu đầu vào (untrusted input) được nối thẳng vào chuỗi truy vấn (string concatenation), cho phép kẻ tấn công thay đổi cấu trúc logic của câu lệnh SQL."
+      },
+      {
+        "id": 202,
+        "question": "Phương pháp phòng chống tấn công SQL Injection hiệu quả và triệt để nhất là gì?",
+        "options": [
+          "Lọc bỏ dấu nháy đơn bằng hàm replace trong mã nguồn",
+          "Sử dụng truy vấn có tham số (Parameterized Queries / Prepared Statements)",
+          "Ẩn thông báo lỗi SQL không cho người dùng thấy",
+          "Cài đặt phần mềm diệt virus trên máy chủ Web"
+        ],
+        "answer": 1,
+        "explanation": "Prepared Statements tách biệt hoàn toàn giữa mã lệnh SQL và dữ liệu (data). Cơ sở dữ liệu coi biến truyền vào thuần túy là dữ liệu, không bao giờ biên dịch thành lệnh thực thi."
+      },
+      {
+        "id": 203,
+        "question": "Đoạn payload `' OR '1'='1` thường được kẻ tấn công sử dụng trong kiểu tấn công nào?",
+        "options": [
+          "Cross-Site Scripting (XSS)",
+          "SQL Injection nhằm vượt qua cơ chế xác thực đăng nhập (Authentication Bypass)",
+          "Buffer Overflow",
+          "Denial of Service"
+        ],
+        "answer": 1,
+        "explanation": "Khi chèn `' OR '1'='1`, điều kiện WHERE biến thành `WHERE username='' OR '1'='1'`, luôn luôn trả về True và cho phép đăng nhập thành công với quyền tài khoản đầu tiên (thường là admin)."
+      },
+      {
+        "id": 204,
+        "question": "Lỗ hổng Stored XSS (Persistent XSS) nguy hiểm hơn Reflected XSS vì:",
+        "options": [
+          "Stored XSS chỉ ảnh hưởng đến một người duy nhất",
+          "Mã độc JavaScript được lưu vĩnh viễn trong cơ sở dữ liệu và tự động thực thi trên trình duyệt của bất kỳ nạn nhân nào mở trang đó",
+          "Stored XSS không thể đánh cắp được Cookie",
+          "Stored XSS chỉ chạy được trên hệ điều hành Windows"
+        ],
+        "answer": 1,
+        "explanation": "Stored XSS được lưu vào DB (bình luận, bài đăng, profile). Mọi người dùng xem nội dung đó đều bị mã độc tấn công mà không cần bấm vào đường link lạ."
+      },
+      {
+        "id": 205,
+        "question": "Để bảo vệ Cookie phiên (Session Cookie) khỏi việc bị mã JavaScript độc hại trong tấn công XSS đánh cắp, lập trình viên phải đặt cờ nào?",
+        "options": [
+          "SameSite=Strict",
+          "HttpOnly",
+          "Secure",
+          "Domain=.example.com"
+        ],
+        "answer": 1,
+        "explanation": "Cờ `HttpOnly` ngăn chặn mã JavaScript truy cập `document.cookie`. Kể cả trang web bị dính lỗi XSS, kẻ tấn công cũng không thể đọc trộm được Session Cookie bằng JS."
+      },
+      {
+        "id": 206,
+        "question": "Kỹ thuật phòng thủ cốt lõi để chống tấn công XSS là:",
+        "options": [
+          "Mã hóa cơ sở dữ liệu bằng AES",
+          "Mã hóa dữ liệu đầu ra phù hợp với ngữ cảnh hiển thị (Context-aware Output Encoding / Escaping) và lọc đầu vào (Sanitization)",
+          "Đặt mật khẩu tài khoản quản trị dài trên 16 ký tự",
+          "Tắt giao thức HTTPS"
+        ],
+        "answer": 1,
+        "explanation": "Output encoding chuyển đổi các ký tự nhạy cảm (như `<` thành `&lt;`, `>` thành `&gt;`) để trình duyệt coi chúng là văn bản hiển thị chứ không phải mã HTML/JS thực thi."
+      },
+      {
+        "id": 207,
+        "question": "Tấn công CSRF (Cross-Site Request Forgery) lợi dụng cơ chế nào của trình duyệt web?",
+        "options": [
+          "Khả năng tải nhanh hình ảnh của trình duyệt",
+          "Trình duyệt tự động gửi kèm Cookie xác thực của người dùng khi gửi yêu cầu tới trang web mục tiêu",
+          "Lỗ hổng phần cứng card đồ họa",
+          "Tính năng lưu lịch sử duyệt web"
+        ],
+        "answer": 1,
+        "explanation": "CSRF lợi dụng việc nạn nhân đã đăng nhập vào trang A. Kẻ tấn công lừa nạn nhân vào trang B, từ trang B gửi request ngầm sang trang A; trình duyệt tự động đính kèm cookie của trang A."
+      },
+      {
+        "id": 208,
+        "question": "Biện pháp phòng vệ phổ biến và hiệu quả nhất chống tấn công CSRF là gì?",
+        "options": [
+          "Sử dụng Anti-CSRF Token (Synchronizer Token Pattern) ngẫu nhiên, bí mật và duy nhất cho mỗi phiên",
+          "Chuyển toàn bộ phương thức POST sang GET",
+          "Ẩn mã nguồn HTML của trang web",
+          "Yêu cầu người dùng cài đặt phần mềm Antivirus"
+        ],
+        "answer": 0,
+        "explanation": "Anti-CSRF Token là chuỗi ngẫu nhiên sinh ra trên server và gắn vào form. Kẻ tấn công từ trang khác không thể đoán được token này nên yêu cầu giả mạo bị server từ chối."
+      },
+      {
+        "id": 209,
+        "question": "Cờ thuộc tính nào của Cookie giúp giảm thiểu nguy cơ tấn công CSRF bằng cách hạn chế gửi cookie trong các truy vấn chéo trang?",
+        "options": [
+          "Path=/api",
+          "SameSite (Strict hoặc Lax)",
+          "Max-Age=3600",
+          "Version=1"
+        ],
+        "answer": 1,
+        "explanation": "Cờ `SameSite=Lax` hoặc `Strict` yêu cầu trình duyệt không gửi cookie khi yêu cầu xuất phát từ một tên miền khác (cross-site), dập tắt nguy cơ CSRF."
+      },
+      {
+        "id": 210,
+        "question": "Lỗ hổng IDOR (Insecure Direct Object References) xảy ra khi nào?",
+        "options": [
+          "Khi trang web bị tấn công tràn bộ đệm",
+          "Khi ứng dụng dùng định danh trực tiếp (ID) của tài nguyên (ví dụ: `/invoice?id=123`) mà không kiểm tra quyền sở hữu của người dùng hiện tại",
+          "Khi cổng mạng 443 bị tin tặc đóng lại",
+          "Khi cơ sở dữ liệu bị đầy dung lượng ổ cứng"
+        ],
+        "answer": 1,
+        "explanation": "IDOR là lỗi phân quyền (Broken Object Level Authorization): Người dùng A chỉ cần sửa `id=123` thành `id=124` trên URL là xem trộm được hóa đơn/thông tin của người dùng B."
+      },
+      {
+        "id": 211,
+        "question": "Lỗ hổng SSRF (Server-Side Request Forgery) cho phép kẻ tấn công làm gì?",
+        "options": [
+          "Thay đổi giao diện trang web trên máy cá nhân của mình",
+          "Ép máy chủ ứng dụng (Backend) thực hiện các yêu cầu HTTP tới các dịch vụ mạng nội bộ hoặc hệ thống bên ngoài thay cho kẻ tấn công",
+          "Đánh cắp mật khẩu Wi-Fi của người dùng",
+          "Gây nghẽn mạng gia đình"
+        ],
+        "answer": 1,
+        "explanation": "SSRF lợi dụng tính năng nhập URL (ví dụ: tải ảnh từ link). Kẻ tấn công nhập `http://169.254.169.254` (cloud metadata) hoặc `http://192.168.1.1` để truy cập hạ tầng mạng nội bộ phía sau firewall."
+      },
+      {
+        "id": 212,
+        "question": "Lỗi Command Injection (Chèn lệnh hệ điều hành) xảy ra khi nào?",
+        "options": [
+          "Khi người dùng gõ sai câu lệnh trong terminal máy tính cá nhân",
+          "Khi ứng dụng web chuyển thẳng dữ liệu nhập từ người dùng vào các hàm thực thi lệnh hệ thống (như system, exec) mà không lọc",
+          "Khi bộ nhớ RAM của máy chủ bị lỗi bit",
+          "Khi hệ thống cài đặt cập nhật Windows Update"
+        ],
+        "answer": 1,
+        "explanation": "Ví dụ ứng dụng có tính năng `ping [IP]`. Người dùng nhập `8.8.8.8; cat /etc/passwd`. Nếu không kiểm tra, lệnh `cat /etc/passwd` sẽ thực thi trên máy chủ."
+      },
+      {
+        "id": 213,
+        "question": "Cơ chế CSP (Content Security Policy) cấu hình qua HTTP Header nhằm mục đích gì?",
+        "options": [
+          "Giúp trang web tải nhanh hơn trên điện thoại",
+          "Quy định danh sách các nguồn (domains) được phép tải script, hình ảnh, stylesheet nhằm giảm thiểu rủi ro XSS và dữ liệu độc hại",
+          "Tự động dịch trang web sang tiếng Anh",
+          "Chống tấn công từ chối dịch vụ DDoS vào tầng mạng"
+        ],
+        "answer": 1,
+        "explanation": "CSP cho phép máy chủ tuyên bố các nguồn hợp lệ cho tài nguyên. Nếu trang web bị chèn script từ domain độc hại, trình duyệt sẽ chặn không thực thi."
+      },
+      {
+        "id": 214,
+        "question": "Tấn công Clickjacking là gì?",
+        "options": [
+          "Đập vỡ chuột máy tính của nạn nhân",
+          "Kỹ thuật lừa người dùng nhấp vào một nút bấm vô hại biểu kiến, nhưng thực chất đang bấm vào một khung iframe vô hình (opacity=0) đè lên trên",
+          "Tự động tăng số lượt nhấp chuột ảo cho quảng cáo",
+          "Gửi email rác số lượng lớn"
+        ],
+        "answer": 1,
+        "explanation": "Clickjacking (UI Redressing) nhúng trang web mục tiêu vào iframe trong suốt để lừa người dùng click thực hiện hành vi ngoài ý muốn (xóa tài khoản, like page, chuyển tiền)."
+      },
+      {
+        "id": 215,
+        "question": "Để ngăn chặn website của mình bị nhúng vào `<iframe>` của kẻ tấn công trong kỹ thuật Clickjacking, cần cấu hình header nào?",
+        "options": [
+          "X-Frame-Options: DENY hoặc Content-Security-Policy: frame-ancestors 'none'",
+          "Cache-Control: no-cache",
+          "Strict-Transport-Security: max-age=31536000",
+          "Access-Control-Allow-Origin: *"
+        ],
+        "answer": 0,
+        "explanation": "Header `X-Frame-Options: DENY` hoặc `SAMEORIGIN` (hoặc CSP `frame-ancestors`) chỉ thị cho trình duyệt cấm hiển thị trang web bên trong thẻ `<iframe>`."
+      },
+      {
+        "id": 216,
+        "question": "Cơ chế CORS (Cross-Origin Resource Sharing) cấu hình giá trị `Access-Control-Allow-Origin: *` kèm `Allow-Credentials: true` tiềm ẩn nguy cơ gì?",
+        "options": [
+          "Làm máy chủ web bị quá tải CPU",
+          "Bất kỳ trang web nào khác cũng có thể đọc được dữ liệu nhạy cảm của người dùng khi họ truy cập",
+          "Trang web bị cấm truy cập từ Google Chrome",
+          "Mạng Internet bị ngắt kết nối"
+        ],
+        "answer": 1,
+        "explanation": "Cấu hình CORS quá lỏng lẻo cho phép mã nguồn từ bất kỳ trang web độc hại nào đọc được dữ liệu JSON/phản hồi API của trang web chính."
+      },
+      {
+        "id": 217,
+        "question": "Tấn công Path Traversal (Directory Traversal) biểu hiện qua chuỗi ký tự nào sau đây?",
+        "options": [
+          "../../../../etc/passwd",
+          "<script>alert(1)</script>",
+          "SELECT * FROM users",
+          "DROP TABLE students"
+        ],
+        "answer": 0,
+        "explanation": "Ký tự `../` dùng để lùi thư mục cha. Nếu ứng dụng đọc file qua tham số `?file=...` mà không kiểm tra, kẻ tấn công sẽ thoát ra khỏi web root để đọc file hệ thống."
+      },
+      {
+        "id": 218,
+        "question": "Lỗ hổng File Upload không an toàn có thể dẫn đến hậu quả nghiêm trọng nhất là:",
+        "options": [
+          "Hết dung lượng ổ đĩa",
+          "Kẻ tấn công tải lên webshell (file .php, .jsp, .aspx) và thực thi mã tùy ý từ xa (RCE) để chiếm toàn quyền điều khiển máy chủ",
+          "Hình ảnh trên trang web bị vỡ giao diện",
+          "Tốc độ tải ảnh bị chậm đi"
+        ],
+        "answer": 1,
+        "explanation": "Nếu máy chủ cho phép upload file có đuôi thực thi vào thư mục web công khai, kẻ tấn công chỉ cần truy cập file đó để chiếm quyền điều khiển server (RCE)."
+      },
+      {
+        "id": 219,
+        "question": "Phương pháp an toàn nhất để lưu trữ file người dùng tải lên hệ thống là:",
+        "options": [
+          "Lưu trực tiếp vào thư mục gốc của trang web và giữ nguyên tên file gốc của người dùng",
+          "Đổi tên file ngẫu nhiên (UUID), kiểm tra MIME type và phần mở rộng, lưu ngoài web root hoặc đẩy lên Object Storage (S3/Cloud Storage)",
+          "Cho phép chạy tất cả các loại file",
+          "Lưu đường dẫn file vào mã nguồn công khai"
+        ],
+        "answer": 1,
+        "explanation": "Lưu file ngoài web root hoặc trên S3/Cloud Storage ngăn chặn việc máy chủ web vô tình biên dịch và thực thi file mã độc của kẻ tấn công."
+      },
+      {
+        "id": 220,
+        "question": "Khái niệm 'Session Fixation' (Cố định phiên) là dạng tấn công như thế nào?",
+        "options": [
+          "Kẻ tấn công ép nạn nhân phải sử dụng một Session ID đã được kẻ tấn công chuẩn bị sẵn từ trước",
+          "Hacker làm cho phiên làm việc của người dùng không bao giờ hết hạn",
+          "Tấn công làm hỏng bộ nhớ RAM của máy chủ",
+          "Gây nghẽn phiên truy cập cơ sở dữ liệu"
+        ],
+        "answer": 0,
+        "explanation": "Kẻ tấn công gán trước Session ID cho nạn nhân (qua URL hoặc cookie). Khi nạn nhân đăng nhập thành công, kẻ tấn công dùng lại Session ID đó để chiếm quyền."
+      },
+      {
+        "id": 221,
+        "question": "Để phòng chống tấn công Session Fixation, máy chủ ứng dụng phải thực hiện thao tác nào ngay sau khi người dùng đăng nhập thành công?",
+        "options": [
+          "Tái tạo và cấp một Session ID hoàn toàn mới (Regenerate Session ID)",
+          "Giữ nguyên Session ID cũ để tiết kiệm tài nguyên",
+          "Gửi mật khẩu của người dùng vào Cookie",
+          "Tắt tính năng Cookie của trình duyệt"
+        ],
+        "answer": 0,
+        "explanation": "Regenerate Session ID sau khi đăng nhập đảm bảo bất kỳ session id nào tồn tại trước khi đăng nhập đều bị hủy, vô hiệu hóa hoàn toàn Session Fixation."
+      },
+      {
+        "id": 222,
+        "question": "Nguyên tắc nào sau đây đúng khi hiển thị thông báo lỗi đăng nhập thất bại cho người dùng?",
+        "options": [
+          "Hiển thị rõ: 'Tên đăng nhập không tồn tại' hoặc 'Mật khẩu không chính xác'",
+          "Chỉ hiển thị thông báo chung: 'Tên đăng nhập hoặc mật khẩu không chính xác'",
+          "Hiển thị chi tiết câu truy vấn SQL bị lỗi ra màn hình",
+          "Gửi mật khẩu đúng vào email của người dùng"
+        ],
+        "answer": 1,
+        "explanation": "Thông báo chung chung ngăn chặn kẻ tấn công thực hiện hành vi dò quét để xác định danh sách các tài khoản/email có thực trên hệ thống (User Enumeration)."
+      },
+      {
+        "id": 223,
+        "question": "Lỗ hổng XML External Entity (XXE) xảy ra khi nào?",
+        "options": [
+          "Khi trình phân tích cú pháp XML (XML Parser) xử lý dữ liệu đầu vào chứa các thực thể ngoại vi (External Entities) không an toàn",
+          "Khi file XML có kích thước quá nhỏ",
+          "Khi máy chủ không cài đặt phần mềm diệt virus",
+          "Khi trang web dùng mã HTML5"
+        ],
+        "answer": 0,
+        "explanation": "XXE cho phép kẻ tấn công đọc file nhạy cảm trên máy chủ (`/etc/passwd`), thực hiện SSRF nội bộ hoặc gây từ chối dịch vụ (Billion Laughs attack)."
+      },
+      {
+        "id": 224,
+        "question": "Công cụ nào sau đây thường được các chuyên gia bảo mật sử dụng làm Web Proxy can thiệp (Interception Proxy) để kiểm thử bảo mật ứng dụng web?",
+        "options": [
+          "Burp Suite / OWASP ZAP",
+          "Microsoft Word",
+          "VLC Media Player",
+          "Adobe Photoshop"
+        ],
+        "answer": 0,
+        "explanation": "Burp Suite và OWASP ZAP là hai công cụ Proxy tiêu chuẩn ngành giúp bắt, phân tích và sửa đổi các gói tin HTTP/HTTPS giữa client và server."
+      },
+      {
+        "id": 225,
+        "question": "Phương pháp kiểm thử DAST (Dynamic Application Security Testing) khác với SAST (Static) ở điểm nào?",
+        "options": [
+          "DAST phân tích mã nguồn mà không cần chạy ứng dụng",
+          "DAST kiểm thử ứng dụng từ bên ngoài khi ứng dụng đang chạy thực tế (Black-box), trong khi SAST quét mã nguồn tĩnh (White-box)",
+          "DAST chỉ kiểm tra phần cứng",
+          "SAST chỉ dùng cho ứng dụng di động"
+        ],
+        "answer": 1,
+        "explanation": "SAST (Static) phân tích code tĩnh khi chưa chạy. DAST (Dynamic) gửi request tấn công thực tế vào ứng dụng đang chạy để phát hiện lỗ hổng thời gian thực."
+      },
+      {
+        "id": 226,
+        "question": "Để bảo vệ ứng dụng chống tấn công Brute-force form đăng nhập, giải pháp nào sau đây là hiệu quả nhất?",
+        "options": [
+          "Rate Limiting (Giới hạn tần suất gửi request), khóa tạm thời tài khoản và sử dụng CAPTCHA",
+          "Cho phép người dùng thử mật khẩu không giới hạn",
+          "Ẩn nút Đăng nhập khỏi giao diện",
+          "Chuyển toàn bộ dữ liệu người dùng sang file text"
+        ],
+        "answer": 0,
+        "explanation": "Rate limiting giới hạn số lần thử trong một khoảng thời gian, kết hợp CAPTCHA chặn bot tự động hóa việc thử hàng triệu mật khẩu."
+      },
+      {
+        "id": 227,
+        "question": "Kỹ thuật 'DOM-based XSS' xảy ra ở đâu?",
+        "options": [
+          "Hoàn toàn ở phía Client (Trình duyệt) do mã JavaScript xử lý dữ liệu đầu vào không an toàn và ghi trực tiếp vào DOM",
+          "Ở máy chủ cơ sở dữ liệu MySQL",
+          "Ở tường lửa mạng của nhà cung cấp dịch vụ Internet",
+          "Ở máy chủ DNS"
+        ],
+        "answer": 0,
+        "explanation": "DOM XSS không cần dữ liệu gửi về server; mã JS trên trình duyệt lấy dữ liệu từ `location.hash` hoặc `location.search` rồi đưa vào `innerHTML` gây thực thi mã độc."
+      },
+      {
+        "id": 228,
+        "question": "Trong OWASP Top 10, 'Security Misconfiguration' (Cấu hình bảo mật sai sót) bao gồm hành vi nào?",
+        "options": [
+          "Sử dụng tài khoản/mật khẩu mặc định của nhà sản xuất, bật chế độ gỡ lỗi (Debug mode) trên production, để lộ file cấu hình",
+          "Lập trình viên viết mã nguồn quá ngắn",
+          "Máy chủ chạy quá êm không phát ra tiếng ồn",
+          "Sử dụng hệ điều hành mã nguồn mở"
+        ],
+        "answer": 0,
+        "explanation": "Để mật khẩu admin mặc định (`admin/admin`), bật debug lộ stack trace thông tin hệ thống, không đổi cổng mặc định là các lỗi cấu hình nguy hiểm."
+      },
+      {
+        "id": 229,
+        "question": "Header nào của HTTP thông báo cho trình duyệt chỉ tải trang web qua giao diện bảo mật HTTPS và ghi nhớ điều này trong thời gian dài?",
+        "options": [
+          "Strict-Transport-Security (HSTS)",
+          "X-Content-Type-Options: nosniff",
+          "Content-Encoding: gzip",
+          "Server: Apache"
+        ],
+        "answer": 0,
+        "explanation": "HSTS buộc trình duyệt tự động chuyển mọi kết nối HTTP sang HTTPS và từ chối truy cập nếu chứng chỉ SSL không hợp lệ, chống tấn công SSL Stripping."
+      },
+      {
+        "id": 230,
+        "question": "Lỗ hổng Server-Side Template Injection (SSTI) cho phép kẻ tấn công làm gì?",
+        "options": [
+          "Chỉ thay đổi màu nền của trang web",
+          "Chèn mã vào template engine (Jinja2, Twig, Freemarker) dẫn đến thực thi mã tùy ý từ xa (Remote Code Execution) trên máy chủ",
+          "Xóa file cookie trên máy người dùng",
+          "Làm hỏng bàn phím của người quản trị"
+        ],
+        "answer": 1,
+        "explanation": "SSTI xảy ra khi input được đưa trực tiếp vào template. Kẻ tấn công dùng cú pháp template (như `{{7*7}}`) để gọi hàm hệ thống và chiếm quyền điều khiển server."
+      }
+    ]
+  },
+  {
+    "id": "chuyen-de-3",
+    "title": "Chuyên đề 3: Mật mã học ứng dụng, Mã hóa & Chữ ký số",
+    "description": "Các thuật toán mã hóa đối xứng, bất đối xứng, hàm băm, mã xác thực thông điệp HMAC, hạ tầng khóa công khai PKI và chữ ký số.",
+    "badge": "25 câu hỏi",
+    "questions": [
+      {
+        "id": 301,
+        "question": "Đặc điểm cơ bản của hệ mật mã đối xứng (Symmetric Encryption) là:",
+        "options": [
+          "Sử dụng cùng một khóa bí mật (Secret Key) cho cả quá trình mã hóa và giải mã",
+          "Sử dụng hai khóa khác nhau: một khóa công khai và một khóa riêng",
+          "Không thể giải mã được dữ liệu sau khi mã hóa",
+          "Chỉ sử dụng được trên hệ điều hành Linux"
+        ],
+        "answer": 0,
+        "explanation": "Mã hóa đối xứng (AES, DES, 3DES, ChaCha20) dùng chung một khóa bí mật giữa hai bên để mã hóa và giải mã, tốc độ nhanh và hiệu năng cao."
+      },
+      {
+        "id": 302,
+        "question": "Thuật toán nào sau đây là thuật toán mã hóa đối xứng phổ biến và tiêu chuẩn nhất hiện nay?",
+        "options": [
+          "RSA",
+          "AES (Advanced Encryption Standard)",
+          "ECC (Elliptic Curve Cryptography)",
+          "Diffie-Hellman"
+        ],
+        "answer": 1,
+        "explanation": "AES (chuẩn mã hóa Rijndael) là tiêu chuẩn toàn cầu được NIST phê chuẩn với độ dài khóa 128, 192 hoặc 256 bit."
+      },
+      {
+        "id": 303,
+        "question": "Nhược điểm lớn nhất của hệ mật mã đối xứng khi triển khai trong hệ thống có nhiều người dùng là gì?",
+        "options": [
+          "Tốc độ mã hóa quá chậm",
+          "Vấn đề phân phối và quản lý khóa an toàn (Key Distribution Problem)",
+          "Kích thước file sau khi mã hóa tăng gấp 10 lần",
+          "Không hỗ trợ mã hóa file văn bản"
+        ],
+        "answer": 1,
+        "explanation": "Để n người trao đổi an toàn từng cặp với nhau, cần n*(n-1)/2 khóa. Việc gửi khóa bí mật qua môi trường mạng không an toàn là rào cản lớn."
+      },
+      {
+        "id": 304,
+        "question": "Hệ mật mã bất đối xứng (Asymmetric Encryption / Public Key Cryptography) sử dụng cặp khóa bao gồm:",
+        "options": [
+          "Hai khóa riêng bí mật",
+          "Khóa công khai (Public Key) và Khóa riêng (Private Key)",
+          "Khóa mạng và Khóa phần cứng",
+          "Khóa tạm thời và Khóa vĩnh viễn"
+        ],
+        "answer": 1,
+        "explanation": "Khóa công khai (Public Key) được phổ biến cho mọi người; Khóa riêng (Private Key) được chủ sở hữu giữ bí mật tuyệt đối."
+      },
+      {
+        "id": 305,
+        "question": "Trong mã hóa bất đối xứng, nếu Alice muốn gửi một bức thư bí mật cho Bob, Alice phải sử dụng khóa nào để mã hóa?",
+        "options": [
+          "Khóa riêng (Private Key) của Alice",
+          "Khóa công khai (Public Key) của Alice",
+          "Khóa riêng (Private Key) của Bob",
+          "Khóa công khai (Public Key) của Bob"
+        ],
+        "answer": 3,
+        "explanation": "Alice mã hóa bằng Public Key của Bob. Chỉ có Private Key của Bob (chỉ Bob nắm giữ) mới có thể giải mã được bức thư này."
+      },
+      {
+        "id": 306,
+        "question": "Để tạo Chữ ký số (Digital Signature) trên một văn bản, người ký sử dụng khóa nào của mình?",
+        "options": [
+          "Khóa riêng (Private Key) của người ký",
+          "Khóa công khai (Public Key) của người ký",
+          "Khóa công khai của người nhận",
+          "Khóa phiên đối xứng"
+        ],
+        "answer": 0,
+        "explanation": "Người ký dùng Private Key của mình để ký lên giá trị băm (hash) của văn bản. Bất kỳ ai có Public Key của người ký đều có thể kiểm tra chữ ký đó."
+      },
+      {
+        "id": 307,
+        "question": "Chữ ký số cung cấp những mục tiêu bảo mật nào?",
+        "options": [
+          "Tính toàn vẹn (Integrity), Tính xác thực nguồn gốc (Authentication) và Tính chống chối bỏ (Non-repudiation)",
+          "Tính bí mật tuyệt đối không ai đọc được",
+          "Tự động xóa tập tin sau khi đọc xong",
+          "Tăng tốc độ truyền dữ liệu qua Internet"
+        ],
+        "answer": 0,
+        "explanation": "Chữ ký số không giúp che giấu nội dung (không có tính bí mật trừ khi kết hợp mã hóa), nhưng chứng minh văn bản không bị sửa đổi và xuất phát từ chính người ký."
+      },
+      {
+        "id": 308,
+        "question": "Đặc tính cốt lõi của một hàm băm mật mã học (Cryptographic Hash Function) là gì?",
+        "options": [
+          "Là hàm một chiều (One-way) không thể đảo ngược, đầu ra có độ dài cố định và có tính nhạy cảm thay đổi cao (Avalanche effect)",
+          "Có thể khôi phục lại dữ liệu gốc từ giá trị băm",
+          "Cho ra giá trị băm có độ dài tùy biến theo độ dài dữ liệu đầu vào",
+          "Chỉ mã hóa được các chuỗi ký tự ngắn dưới 10 chữ"
+        ],
+        "answer": 0,
+        "explanation": "Hàm băm chuyển đầu vào tùy ý thành chuỗi độ dài cố định (SHA-256 luôn ra 256 bit), không thể đảo ngược, chỉ cần đổi 1 bit đầu vào thì toàn bộ giá trị băm thay đổi hoàn toàn."
+      },
+      {
+        "id": 309,
+        "question": "Hiện tượng hai đầu vào khác nhau nhưng cho ra cùng một giá trị băm được gọi là gì?",
+        "options": [
+          "Collision (Đụng độ / Va chạm băm)",
+          "Overflow",
+          "Fragmentation",
+          "Deadlock"
+        ],
+        "answer": 0,
+        "explanation": "Va chạm (Collision) là điểm yếu nghiêm trọng trong mật mã học. MD5 và SHA-1 đã bị coi là lỗi thời vì các nhà khoa học đã tìm ra phương pháp tạo va chạm thực tế."
+      },
+      {
+        "id": 310,
+        "question": "Kỹ thuật thêm 'Salt' (Muối) khi băm mật khẩu người dùng nhằm mục đích chính là gì?",
+        "options": [
+          "Làm cho mật khẩu có vị mặn dễ nhớ",
+          "Ngăn chặn các cuộc tấn công tra cứu trước bằng Bảng cầu vồng (Rainbow Table Attack) và đảm bảo hai người có cùng mật khẩu sẽ có mã băm khác nhau",
+          "Tăng tốc độ băm mật khẩu lên 100 lần",
+          "Tự động đổi mật khẩu theo định kỳ"
+        ],
+        "answer": 1,
+        "explanation": "Salt là chuỗi ngẫu nhiên sinh ra riêng cho mỗi tài khoản và ghép vào mật khẩu trước khi băm. Nhờ đó, bảng Rainbow Table tạo sẵn trở nên vô dụng."
+      },
+      {
+        "id": 311,
+        "question": "Thuật toán băm mật khẩu nào sau đây được khuyến nghị sử dụng hiện nay vì có cơ chế tốn kém tài nguyên (Slow Hashing) chống Brute-force bằng GPU?",
+        "options": [
+          "MD5",
+          "SHA-1",
+          "Bcrypt, Argon2 hoặc PBKDF2",
+          "Base64"
+        ],
+        "answer": 2,
+        "explanation": "Bcrypt, Argon2 và PBKDF2 cho phép cấu hình chi phí (work factor / cost) để làm chậm quá trình băm, khiến hacker không thể dùng dàn card GPU đoán hàng tỷ mật khẩu mỗi giây."
+      },
+      {
+        "id": 312,
+        "question": "Giao thức trao đổi khóa Diffie-Hellman cho phép hai bên làm gì?",
+        "options": [
+          "Tạo và thống nhất một khóa bí mật chung qua một kênh truyền thông công khai không an toàn mà kẻ nghe lén không thể tính ra được khóa",
+          "Gửi mật khẩu qua email an toàn",
+          "Xóa bỏ hoàn toàn nhu cầu sử dụng chứng chỉ số",
+          "Mã hóa file hình ảnh không mất chất lượng"
+        ],
+        "answer": 0,
+        "explanation": "Diffie-Hellman dựa trên bài toán logarit rời rạc, cho phép hai bên thỏa thuận ra khóa phiên chung mà không cần truyền trực tiếp khóa đó qua mạng."
+      },
+      {
+        "id": 313,
+        "question": "Chứng chỉ số X.509 (Digital Certificate) dùng trong HTTPS được cấp phát bởi tổ chức nào?",
+        "options": [
+          "Nhà cung cấp dịch vụ Internet (ISP)",
+          "Cơ quan chứng thực số (CA - Certificate Authority)",
+          "Người quản trị mạng nội bộ",
+          "Nhà sản xuất máy tính"
+        ],
+        "answer": 1,
+        "explanation": "CA (như Let's Encrypt, DigiCert, Cloudflare) là bên thứ ba đáng tin cậy đứng ra ký xác nhận rằng Khóa công khai này thực sự thuộc về tên miền/tổ chức đó."
+      },
+      {
+        "id": 314,
+        "question": "Trong giao thức TLS/HTTPS, quá trình Handshake ban đầu sử dụng mã hóa nào, và quá trình truyền dữ liệu sau đó sử dụng mã hóa nào?",
+        "options": [
+          "Sử dụng mã hóa đối xứng từ đầu đến cuối",
+          "Dùng mã hóa bất đối xứng để xác thực và thỏa thuận khóa, sau đó dùng mã hóa đối xứng để truyền dữ liệu thực tế",
+          "Sử dụng mã hóa bất đối xứng cho toàn bộ quá trình truyền dữ liệu",
+          "Dùng hàm băm MD5 để truyền dữ liệu"
+        ],
+        "answer": 1,
+        "explanation": "Mã hóa bất đối xứng an toàn nhưng chậm, nên chỉ dùng lúc đầu để thiết lập kết nối và trao đổi Khóa phiên (Session Key). Toàn bộ dữ liệu sau đó được mã hóa bằng AES đối xứng để đạt tốc độ cao."
+      },
+      {
+        "id": 315,
+        "question": "Mã xác thực thông điệp HMAC (Hash-based Message Authentication Code) kết hợp yếu tố nào để đảm bảo tính toàn vẹn và xác thực nguồn gốc?",
+        "options": [
+          "Hàm băm mật mã và một Khóa bí mật (Secret Key)",
+          "Chỉ sử dụng hàm băm thông thường",
+          "Địa chỉ IP và mật khẩu BIOS",
+          "Số ngẫu nhiên và ngày giờ hệ thống"
+        ],
+        "answer": 0,
+        "explanation": "HMAC tính giá trị băm kết hợp với một Khóa bí mật chung. Kẻ tấn công trên đường truyền dù sửa được nội dung nhưng không có khóa bí mật nên không thể tính lại HMAC hợp lệ."
+      },
+      {
+        "id": 316,
+        "question": "Độ dài khóa tối thiểu được khuyến nghị cho thuật toán mã hóa bất đối xứng RSA hiện nay để đảm bảo an toàn là bao nhiêu?",
+        "options": [
+          "128 bit",
+          "512 bit",
+          "1024 bit",
+          "2048 bit (hoặc 4096 bit)"
+        ],
+        "answer": 3,
+        "explanation": "Khóa RSA 1024 bit đã bị coi là không còn an toàn trước sức mạnh điện toán hiện nay. NIST khuyến nghị sử dụng khóa RSA tối thiểu từ 2048 bit trở lên."
+      },
+      {
+        "id": 317,
+        "question": "Base64 có phải là một thuật toán mã hóa bảo mật dữ liệu không?",
+        "options": [
+          "Có, Base64 là thuật toán mã hóa bảo mật rất an toàn",
+          "Không, Base64 chỉ là một phương thức mã hóa định dạng (Encoding) để chuyển dữ liệu nhị phân thành ký tự ASCII, bất kỳ ai cũng có thể giải mã dễ dàng",
+          "Base64 là một loại virus máy tính",
+          "Base64 là giao thức truyền file qua mạng"
+        ],
+        "answer": 1,
+        "explanation": "Encoding (như Base64, Hex) không có tính bí mật vì không dùng khóa. Bất kỳ ai cũng decode ngược lại dữ liệu gốc trong 1 dòng lệnh."
+      },
+      {
+        "id": 318,
+        "question": "Chế độ hoạt động ECB (Electronic Codebook) trong mã hóa khối bị khuyến cáo không nên dùng vì:",
+        "options": [
+          "ECB quá chậm so với các chế độ khác",
+          "Các khối dữ liệu giống nhau sẽ cho ra các khối mã hóa giống hệt nhau, để lộ cấu trúc và hình mẫu của dữ liệu gốc (ví dụ hình chim cánh cụt ECB Penguin)",
+          "ECB chỉ mã hóa được file dung lượng dưới 1KB",
+          "ECB yêu cầu phần cứng chuyên dụng"
+        ],
+        "answer": 1,
+        "explanation": "ECB mã hóa từng khối 16 byte độc lập không kèm vector khởi tạo (IV). Nên dùng CBC, CTR hoặc tốt nhất là GCM (kèm xác thực tính toàn vẹn)."
+      },
+      {
+        "id": 319,
+        "question": "Chế độ mã hóa AES-GCM (Galois/Counter Mode) được ưa chuộng hàng đầu hiện nay vì:",
+        "options": [
+          "Là chế độ mã hóa kèm xác thực (Authenticated Encryption with Associated Data - AEAD), vừa đảm bảo tính bí mật vừa đảm bảo tính toàn vẹn dữ liệu",
+          "Là thuật toán miễn phí không cần bản quyền",
+          "Không cần sử dụng vector khởi tạo IV",
+          "Có thể khôi phục lại mật khẩu bị mất"
+        ],
+        "answer": 0,
+        "explanation": "AES-GCM tạo ra Authentication Tag đi kèm bản mã. Nếu dữ liệu bị kẻ tấn công sửa dù chỉ 1 bit, quá trình giải mã sẽ báo lỗi ngay lập tức."
+      },
+      {
+        "id": 320,
+        "question": "Tính chất 'PFS' (Perfect Forward Secrecy) trong giao thức TLS bảo đảm điều gì?",
+        "options": [
+          "Máy chủ không bao giờ bị sập mạng",
+          "Nếu khóa riêng (Private Key) của máy chủ bị lộ trong tương lai, kẻ tấn công vẫn không thể giải mã các phiên liên lạc đã ghi lại trong quá khứ",
+          "Trang web tải nhanh gấp 10 lần",
+          "Tự động xóa lịch sử duyệt web của người dùng"
+        ],
+        "answer": 1,
+        "explanation": "PFS dùng các khóa phiên tạm thời (Ephemeral Diffie-Hellman). Dù sau này lộ Private Key chính của server thì các phiên cũ đã mã hóa trước đây vẫn an toàn."
+      },
+      {
+        "id": 321,
+        "question": "Cuộc tấn công 'Replay Attack' (Tấn công phát lại) có thể bị ngăn chặn bằng cách nào?",
+        "options": [
+          "Sử dụng thêm dấu thời gian (Timestamp) hoặc số ngẫu nhiên chỉ dùng một lần (Nonce)",
+          "Mã hóa file bằng thuật toán AES",
+          "Đặt mật khẩu dài hơn cho tài khoản",
+          "Tăng tốc độ đường truyền mạng"
+        ],
+        "answer": 0,
+        "explanation": "Nonce (Number used once) và Timestamp đảm bảo gói tin chỉ hợp lệ trong một vài giây và chỉ được chấp nhận một lần duy nhất. Yêu cầu gửi lại sẽ bị server từ chối."
+      },
+      {
+        "id": 322,
+        "question": "Tấn công sinh nhật (Birthday Attack) trong mật mã học khai thác bài toán toán học nào?",
+        "options": [
+          "Khai thác xác suất xảy ra va chạm (Collision) trong hàm băm nhanh hơn nhiều so với đoán mò toàn bộ không gian mẫu",
+          "Đoán ngày sinh nhật của quản trị viên để đăng nhập",
+          "Tấn công vào ngày lễ tết khi nhân viên IT nghỉ làm",
+          "Gửi email chúc mừng sinh nhật chứa mã độc"
+        ],
+        "answer": 0,
+        "explanation": "Theo nghịch lý sinh nhật, để tìm va chạm của hàm băm n bit, kẻ tấn công chỉ cần khoảng 2^(n/2) phép thử thay vì 2^n phép thử."
+      },
+      {
+        "id": 323,
+        "question": "Chữ ký điện tử sử dụng giải thuật nào sau đây?",
+        "options": [
+          "DES",
+          "RSA hoặc ECDSA",
+          "AES-256",
+          "RC4"
+        ],
+        "answer": 1,
+        "explanation": "Chữ ký điện tử bắt buộc phải dùng thuật toán mật mã bất đối xứng (như RSA, DSA, ECDSA, Ed25519) kết hợp cùng hàm băm (SHA-256)."
+      },
+      {
+        "id": 324,
+        "question": "Cơ chế nào được các trình duyệt sử dụng để kiểm tra xem một chứng chỉ số SSL/TLS có bị nhà phát hành thu hồi trước thời hạn hay không?",
+        "options": [
+          "CRL (Certificate Revocation List) hoặc giao thức OCSP (Online Certificate Status Protocol)",
+          "DNS Lookup",
+          "Giao thức FTP",
+          "Kiểm tra file robots.txt"
+        ],
+        "answer": 0,
+        "explanation": "CRL và OCSP cho phép trình duyệt kiểm tra thời gian thực với CA xem chứng chỉ của trang web có bị thu hồi (do lộ private key) hay không."
+      },
+      {
+        "id": 325,
+        "question": "Tại sao việc tự viết thuật toán mã hóa riêng (Roll your own crypto) bị coi là một sai lầm nghiêm trọng trong bảo mật phần mềm?",
+        "options": [
+          "Vì vi phạm bản quyền phần mềm",
+          "Vì thiết kế thuật toán mật mã và lập trình an toàn không bị lỗi rò rỉ kênh phụ (Side-channel attack) cực kỳ khó, chỉ nên dùng các thư viện chuẩn đã được cộng đồng kiểm định qua nhiều năm",
+          "Vì mã hóa riêng tốn nhiều tiền mua bản quyền",
+          "Vì các ngôn ngữ lập trình không hỗ trợ viết thuật toán mã hóa"
+        ],
+        "answer": 1,
+        "explanation": "'Don't roll your own crypto' là quy tắc vàng. Các thư viện chuẩn (như OpenSSL, libsodium, Web Crypto API) đã trải qua hàng nghìn lượt audit của các nhà mật mã học hàng đầu thế giới."
+      }
+    ]
+  },
+  {
+    "id": "chuyen-de-4",
+    "title": "Chuyên đề 4: Bảo mật Mạng, Hệ điều hành & Phòng chống Mã độc",
+    "description": "Kiến trúc an ninh mạng, Tường lửa, IDS/IPS, VPN, bảo mật hệ điều hành Linux/Windows, phân tích và phòng chống mã độc.",
+    "badge": "25 câu hỏi",
+    "questions": [
+      {
+        "id": 401,
+        "question": "Tường lửa trạng thái (Stateful Inspection Firewall) khác tường lửa lọc gói tin tĩnh (Stateless / Packet Filtering) ở điểm nào?",
+        "options": [
+          "Stateful Firewall có thể theo dõi ngữ cảnh và trạng thái của các kết nối TCP/UDP đang hoạt động (ESTABLISHED, RELATED) thay vì chỉ kiểm tra từng gói tin rời rạc",
+          "Stateful Firewall chỉ hoạt động trên mạng không dây",
+          "Packet Filtering có khả năng diệt virus còn Stateful thì không",
+          "Stateful Firewall không kiểm tra địa chỉ IP nguồn và đích"
+        ],
+        "answer": 0,
+        "explanation": "Stateful firewall duy trì bảng trạng thái kết nối (State table). Nếu một gói tin phản hồi thuộc về kết nối hợp lệ đã được khởi tạo từ bên trong, nó sẽ tự động cho qua."
+      },
+      {
+        "id": 402,
+        "question": "Vùng mạng DMZ (Demilitarized Zone) trong thiết kế mạng doanh nghiệp có chức năng gì?",
+        "options": [
+          "Khu vực cấm tất cả mọi người sử dụng điện thoại",
+          "Vùng mạng đệm cách ly chứa các máy chủ công khai (Web, Mail, DNS) nằm giữa mạng nội bộ an toàn và mạng Internet công cộng",
+          "Vùng mạng dành riêng cho ban giám đốc",
+          "Hệ thống sao lưu dữ liệu đám mây"
+        ],
+        "answer": 1,
+        "explanation": "DMZ ngăn cách mạng Internet với mạng LAN nội bộ. Nếu máy chủ Web trong DMZ bị hack, kẻ tấn công vẫn bị tường lửa thứ hai ngăn chặn không thể xâm nhập vào cơ sở dữ liệu nội bộ."
+      },
+      {
+        "id": 403,
+        "question": "Hệ thống phát hiện xâm nhập IDS (Intrusion Detection System) khác hệ thống ngăn chặn xâm nhập IPS (Intrusion Prevention System) ở điểm nào?",
+        "options": [
+          "IDS chỉ phát hiện và gửi cảnh báo (bị động), trong khi IPS được đặt trực tiếp trên luồng truyền (in-line) và có thể chủ động chặn đứng gói tin độc hại",
+          "IDS chặn được virus còn IPS chỉ ghi log",
+          "IPS là thiết bị phần cứng còn IDS là ứng dụng trên điện thoại",
+          "IDS không kiểm tra được lưu lượng mạng"
+        ],
+        "answer": 0,
+        "explanation": "IDS giám sát và cảnh báo cho quản trị viên (Passive). IPS nằm trực tiếp trên đường truyền và tự động ngắt kết nối hoặc drop packet độc hại ngay lập tức (Active)."
+      },
+      {
+        "id": 404,
+        "question": "Phương pháp phát hiện xâm nhập dựa trên dấu hiệu (Signature-based Detection) có nhược điểm lớn nhất là gì?",
+        "options": [
+          "Tốc độ kiểm tra quá chậm",
+          "Không thể phát hiện được các cuộc tấn công mới chưa từng được biết đến (Zero-day attacks) hoặc các biến thể mã độc bị làm rối",
+          "Tỷ lệ cảnh báo sai quá cao đối với lưu lượng thông thường",
+          "Chỉ kiểm tra được các gói tin ICMP Ping"
+        ],
+        "answer": 1,
+        "explanation": "Signature-based chỉ nhận biết những gì đã có trong cơ sở dữ liệu mẫu nhận dạng. Một cuộc tấn công Zero-day mới chưa có mẫu sẽ hoàn toàn lọt qua mặt hệ thống."
+      },
+      {
+        "id": 405,
+        "question": "Giao thức bảo mật mạng riêng ảo IPSec hoạt động ở tầng nào của mô hình OSI?",
+        "options": [
+          "Tầng ứng dụng (Application Layer - Layer 7)",
+          "Tầng mạng (Network Layer - Layer 3)",
+          "Tầng liên kết dữ liệu (Data Link Layer - Layer 2)",
+          "Tầng vật lý (Physical Layer - Layer 1)"
+        ],
+        "answer": 1,
+        "explanation": "IPSec hoạt động ở Layer 3 (Network Layer), cung cấp tính bí mật và toàn vẹn cho toàn bộ gói tin IP mà các ứng dụng bên trên không cần biết."
+      },
+      {
+        "id": 406,
+        "question": "Sự khác biệt cơ bản giữa Virus máy tính và Sâu máy tính (Worm) là gì?",
+        "options": [
+          "Virus cần gắn mình vào một tập tin vật chủ (Host file) và cần sự tương tác của người dùng để lây lan, trong khi Worm là chương trình độc lập tự nhân bản và lây lan qua mạng",
+          "Worm chỉ làm chậm máy tính còn Virus làm mất dữ liệu",
+          "Virus là phần mềm tốt còn Worm là phần mềm xấu",
+          "Worm chỉ lây qua cổng USB còn Virus lây qua mạng Wi-Fi"
+        ],
+        "answer": 0,
+        "explanation": "Worm khai thác các lỗ hổng dịch vụ mạng để tự quét và tự lây từ máy này sang máy khác hoàn toàn tự động mà không cần người dùng click mở file như Virus."
+      },
+      {
+        "id": 407,
+        "question": "Loại mã độc nào ngụy trang dưới dạng một phần mềm hữu ích hoặc trò chơi hợp pháp để lừa người dùng cài đặt vào máy?",
+        "options": [
+          "Trojan Horse (Ngựa thành Troy)",
+          "Ransomware",
+          "Spyware",
+          "Adware"
+        ],
+        "answer": 0,
+        "explanation": "Trojan giả vờ là phần mềm vô hại (game, bộ cài lậu, tiện ích crack). Khi người dùng chạy phần mềm, cửa hậu (backdoor) sẽ mở ra cho hacker xâm nhập."
+      },
+      {
+        "id": 408,
+        "question": "Mã độc tống tiền (Ransomware) thực hiện hành vi gây hại nào chính?",
+        "options": [
+          "Tự động gửi email quảng cáo rác từ hòm thư của nạn nhân",
+          "Mã hóa toàn bộ các tệp tin dữ liệu quan trọng của nạn nhân bằng thuật toán mã hóa mạnh và đòi tiền chuộc để lấy khóa giải mã",
+          "Làm giảm độ sáng màn hình máy tính",
+          "Gỡ cài đặt phần mềm gõ tiếng Việt Unikey"
+        ],
+        "answer": 1,
+        "explanation": "Ransomware (như WannaCry) quét ổ cứng và mã hóa tài liệu, ảnh, database bằng AES/RSA, sau đó để lại tệp hướng dẫn chuyển tiền điện tử Bitcoin để chuộc khóa giải mã."
+      },
+      {
+        "id": 409,
+        "question": "Kỹ thuật phòng thủ hiệu quả nhất để giảm thiểu tối đa thiệt hại khi doanh nghiệp bị tấn công mã độc tống tiền Ransomware là gì?",
+        "options": [
+          "Trả tiền chuộc ngay lập tức cho hacker",
+          "Thực hiện chiến lược sao lưu dữ liệu định kỳ theo nguyên tắc 3-2-1 và lưu trữ bản sao lưu ngoại tuyến (Offline / Immutable Backup)",
+          "Tắt nguồn máy chủ mỗi buổi tối",
+          "Không cho nhân viên sử dụng máy tính"
+        ],
+        "answer": 1,
+        "explanation": "Nguyên tắc backup 3-2-1 (3 bản copy, 2 loại thiết bị lưu trữ khác nhau, 1 bản lưu ngoài văn phòng/offline cách ly hoàn toàn) giúp phục hồi dữ liệu 100% mà không cần trả tiền chuộc."
+      },
+      {
+        "id": 410,
+        "question": "Cơ chế bảo vệ bộ nhớ ASLR (Address Space Layout Randomization) trong hệ điều hành có tác dụng gì?",
+        "options": [
+          "Làm tăng dung lượng bộ nhớ RAM",
+          "Ngẫu nhiên hóa vị trí các vùng nhớ chính (stack, heap, libraries) khi chương trình khởi chạy, gây khó khăn cho kẻ tấn công trong việc khai thác lỗi Buffer Overflow",
+          "Tự động dọn dẹp các ứng dụng chạy ngầm",
+          "Khóa ổ cứng khi người dùng rời khỏi bàn làm việc"
+        ],
+        "answer": 1,
+        "explanation": "ASLR xáo trộn địa chỉ bộ nhớ mỗi lần chạy. Kẻ tấn công không thể đoán trước địa chỉ của hàm độc hại hoặc shellcode trong bộ nhớ để nhảy đến thực thi."
+      },
+      {
+        "id": 411,
+        "question": "Cơ chế bảo vệ DEP / NX (Data Execution Prevention / No-Execute bit) ngăn chặn kỹ thuật tấn công nào?",
+        "options": [
+          "Ngăn chặn việc thực thi mã lệnh trên các vùng bộ nhớ vốn chỉ được cấp phát để lưu dữ liệu (như Stack hoặc Heap)",
+          "Ngăn chặn người dùng mở các file nhạc mp3",
+          "Chống tấn công lừa đảo qua email",
+          "Ngăn chặn máy tính kết nối vào Internet"
+        ],
+        "answer": 0,
+        "explanation": "DEP/NX đánh dấu vùng nhớ Stack/Heap là không thể thực thi (W^X: Write XOR Execute). Nếu hacker chèn shellcode vào Stack và cố gắng chạy, CPU sẽ ném ngoại lệ dừng chương trình ngay."
+      },
+      {
+        "id": 412,
+        "question": "Trong hệ điều hành Linux, câu lệnh `chmod 755 script.sh` thiết lập quyền hạn cho file như thế nào?",
+        "options": [
+          "Chủ sở hữu có toàn quyền (rwx: 7), Nhóm và Người khác có quyền đọc và thực thi (r-x: 5)",
+          "Tất cả mọi người đều có quyền đọc, ghi và thực thi (rwx)",
+          "Chỉ người quản trị root mới được mở file",
+          "Xóa bỏ hoàn toàn quyền thực thi của file"
+        ],
+        "answer": 0,
+        "explanation": "7 = r(4) + w(2) + x(1) cho Owner. 5 = r(4) + x(1) cho Group. 5 = r(4) + x(1) cho Others."
+      },
+      {
+        "id": 413,
+        "question": "Bit quyền đặc biệt SUID (Set User ID) trên file thực thi trong hệ điều hành Linux tiềm ẩn nguy cơ gì?",
+        "options": [
+          "Làm cho file bị virus tấn công nhanh hơn",
+          "Nếu file có SUID của root chứa lỗ hổng, người dùng thông thường khi chạy file có thể lợi dụng để leo thang đặc quyền (Privilege Escalation) lên quyền root cao nhất",
+          "File sẽ tự động xóa sau 24 giờ",
+          "Không thể chỉnh sửa file bằng trình soạn thảo nano"
+        ],
+        "answer": 1,
+        "explanation": "File có SUID chạy với quyền hạn của chủ sở hữu file (thường là root) bất kể ai là người khởi chạy. Nếu file này bị lỗi, hacker sẽ leo thang quyền root ngay lập tức."
+      },
+      {
+        "id": 414,
+        "question": "Kỹ thuật 'Hardening' (Cứng hóa hệ thống) bao gồm các hành động nào sau đây?",
+        "options": [
+          "Gỡ bỏ các dịch vụ và phần mềm không cần thiết, đóng các cổng mạng không dùng, thay đổi mật khẩu mặc định, cập nhật bản vá bảo mật",
+          "Lắp thêm vỏ bảo vệ bằng kim loại dày cho vỏ máy tính",
+          "Cài đặt nhiều phần mềm diệt virus cùng lúc trên một máy",
+          "Tăng tốc xung nhịp CPU lên mức tối đa"
+        ],
+        "answer": 0,
+        "explanation": "Cứng hóa hệ điều hành/máy chủ là quy trình giảm thiểu bề mặt tấn công bằng cách tắt dịch vụ thừa (telnet, ftp...), cấu hình phân quyền tối thiểu và vá lỗi liên tục."
+      },
+      {
+        "id": 415,
+        "question": "Hệ thống bẫy 'Honeypot' trong an ninh mạng được thiết kế để làm gì?",
+        "options": [
+          "Làm nơi lưu trữ mật khẩu an toàn cho quản trị viên",
+          "Là một hệ thống mồi nhử giả lập có chứa lỗ hổng nhằm lừa kẻ tấn công xâm nhập để theo dõi hành vi, thu thập chứng cứ và phát hiện sớm cuộc tấn công",
+          "Tăng tốc độ truy cập mạng cho nhân viên công ty",
+          "Cung cấp Wi-Fi miễn phí tốc độ cao cho khách hàng"
+        ],
+        "answer": 1,
+        "explanation": "Honeypot là hệ thống 'bẫy' không chứa dữ liệu thực. Bất kỳ ai cố gắng truy cập vào Honeypot chắc chắn là kẻ xâm nhập hoặc bot quét tự động."
+      },
+      {
+        "id": 416,
+        "question": "Tấn công giả mạo ARP (ARP Spoofing / Poisoning) trong mạng cục bộ LAN cho phép kẻ tấn công làm gì?",
+        "options": [
+          "Gửi gói tin ARP giả mạo để liên kết địa chỉ MAC của kẻ tấn công với địa chỉ IP của Default Gateway, biến mình thành máy đứng giữa (Man-in-the-Middle) để nghe lén",
+          "Đổi mật khẩu máy tính của người dùng",
+          "Làm chập cháy thiết bị Switch mạng",
+          "Tự động tăng dung lượng gói cước Internet"
+        ],
+        "answer": 0,
+        "explanation": "Giao thức ARP trong mạng LAN không có cơ chế xác thực. Hacker gửi gói tin ARP Reply giả để lừa máy nạn nhân gửi toàn bộ dữ liệu đi Internet qua máy của hacker."
+      },
+      {
+        "id": 417,
+        "question": "Tấn công ngộ độc bộ nhớ đệm DNS (DNS Cache Poisoning) dẫn đến hậu quả gì cho người dùng?",
+        "options": [
+          "Làm hỏng trình duyệt web trên máy tính",
+          "Người dùng gõ tên miền chính xác (như ngân hàng) nhưng bị máy chủ DNS chuyển hướng sang địa chỉ IP của máy chủ giả mạo do kẻ tấn công kiểm soát",
+          "Tự động đổi tên máy tính của người dùng",
+          "Làm ngắt kết nối mạng dây LAN"
+        ],
+        "answer": 1,
+        "explanation": "Kẻ tấn công đầu độc bản ghi cache trên DNS Server. Nạn nhân gõ đúng `bank.com` nhưng DNS phân giải về IP lừa đảo của hacker để đánh cắp tài khoản."
+      },
+      {
+        "id": 418,
+        "question": "Công cụ quét cổng và khảo sát mạng nổi tiếng nhất thế giới là:",
+        "options": [
+          "Nmap (Network Mapper)",
+          "Photoshop",
+          "Notepad",
+          "VLC Player"
+        ],
+        "answer": 0,
+        "explanation": "Nmap là công cụ tiêu chuẩn giúp quét cổng mở, nhận diện hệ điều hành, phát hiện phiên bản dịch vụ đang chạy và kiểm tra lỗ hổng sơ bộ."
+      },
+      {
+        "id": 419,
+        "question": "Công cụ nào sau đây được dùng phổ biến để bắt và phân tích gói tin mạng (Packet Sniffer)?",
+        "options": [
+          "Wireshark",
+          "Microsoft Excel",
+          "AutoCAD",
+          "WinRAR"
+        ],
+        "answer": 0,
+        "explanation": "Wireshark bắt và hiển thị chi tiết từng byte trong gói tin mạng ở mọi tầng giao thức (Ethernet, IP, TCP, HTTP...), là công cụ đắc lực cho phân tích an toàn mạng."
+      },
+      {
+        "id": 420,
+        "question": "Hệ thống quản lý thông tin và sự kiện an ninh mạng SIEM (Security Information and Event Management) có vai trò gì?",
+        "options": [
+          "Thu thập, tổng hợp, tương quan hóa và phân tích tập trung nhật ký (logs) từ toàn bộ máy chủ, tường lửa, thiết bị mạng để phát hiện sớm các mối đe dọa an ninh",
+          "Tự động viết phần mềm mới cho doanh nghiệp",
+          "Lắp đặt hệ thống camera an ninh vật lý",
+          "Cung cấp dịch vụ email cho công ty"
+        ],
+        "answer": 0,
+        "explanation": "SIEM (như Splunk, Elastic SIEM, QRadar) gom hàng triệu dòng log từ mọi thiết bị vào một nơi, dùng quy tắc tương quan để phát hiện dấu hiệu xâm nhập diện rộng."
+      },
+      {
+        "id": 421,
+        "question": "Loại mã độc 'Rootkit' nguy hiểm nhất ở đặc tính nào?",
+        "options": [
+          "Có khả năng ẩn giấu sự tồn tại của chính nó và các tiến trình mã độc khác ở mức nhân hệ điều hành (Kernel level), đánh lừa cả các phần mềm diệt virus thông thường",
+          "Có kích thước file dung lượng quá lớn làm đầy ổ cứng",
+          "Tự động đổi hình nền máy tính liên tục",
+          "Chỉ lây nhiễm vào các file văn bản Word"
+        ],
+        "answer": 0,
+        "explanation": "Rootkit can thiệp vào tầng kernel hoặc bootloader của OS. Khi Task Manager hoặc phần mềm antivirus hỏi OS danh sách tiến trình, Rootkit sẽ lọc bỏ chính nó khỏi kết quả trả về."
+      },
+      {
+        "id": 422,
+        "question": "Mạng máy tính ma 'Botnet' được kẻ tấn công sử dụng phổ biến nhất để thực hiện hành vi nào?",
+        "options": [
+          "Tấn công từ chối dịch vụ phân tán (DDoS), đào tiền điện tử hoặc gửi email rác (spam) với quy mô hàng triệu thiết bị",
+          "Sửa đổi điểm thi đại học của sinh viên",
+          "Hỗ trợ tăng tốc độ internet cho người dùng",
+          "Làm mát trung tâm dữ liệu"
+        ],
+        "answer": 0,
+        "explanation": "Botnet là mạng lưới hàng nghìn/hàng triệu thiết bị bị nhiễm mã độc (máy tính, camera IoT) dưới sự điều khiển của Botmaster để mở các cuộc tấn công DDoS khổng lồ."
+      },
+      {
+        "id": 423,
+        "question": "Kỹ thuật 'SYN Flood Attack' tấn công vào cơ chế nào của giao thức TCP?",
+        "options": [
+          "Quá trình bắt tay 3 bước (TCP Three-Way Handshake: SYN -> SYN-ACK -> ACK)",
+          "Quá trình truyền file bằng FTP",
+          "Quá trình phân giải tên miền DNS",
+          "Cơ chế nén dữ liệu gzip"
+        ],
+        "answer": 0,
+        "explanation": "Hacker gửi hàng triệu gói tin SYN với IP giả mạo. Server cấp phát tài nguyên chờ gói tin ACK thứ 3 nhưng không bao giờ nhận được, dẫn đến cạn kiệt bảng kết nối (SYN queue exhaustion)."
+      },
+      {
+        "id": 424,
+        "question": "Khái niệm 'Zero-Day Vulnerability' (Lỗ hổng ngày 0) chỉ:",
+        "options": [
+          "Lỗ hổng bảo mật chỉ tồn tại trong vòng 0 ngày rồi tự biến mất",
+          "Lỗ hổng bảo mật chưa được công chúng hoặc nhà sản xuất biết đến, do đó chưa có bản vá chính thức và đang bị khai thác trong bí mật",
+          "Lỗ hổng phần cứng không thể sửa chữa",
+          "Lỗi gõ sai chính tả trong tài liệu hướng dẫn"
+        ],
+        "answer": 1,
+        "explanation": "Zero-day nghĩa là nhà phát triển có '0 ngày' để chuẩn bị trước khi bị tấn công. Đây là vũ khí nguy hiểm và có giá trị cao nhất trên thị trường chợ đen an ninh mạng."
+      },
+      {
+        "id": 425,
+        "question": "Thực hiện 'Penetration Testing' (Kiểm thử xâm nhập) kiểu Black-Box (Hộp đen) nghĩa là chuyên gia bảo mật:",
+        "options": [
+          "Được cung cấp toàn bộ mã nguồn, tài liệu thiết kế và sơ đồ mạng trước khi kiểm thử",
+          "Không được cung cấp bất kỳ thông tin nội bộ nào về hệ thống, mô phỏng góc nhìn và hành vi của một kẻ tấn công thực sự từ bên ngoài",
+          "Chỉ kiểm tra các máy tính có vỏ màu đen",
+          "Thực hiện kiểm thử trong phòng tối không bật đèn"
+        ],
+        "answer": 1,
+        "explanation": "Black-box pentest mô phỏng chính xác nhất khả năng phòng thủ của hệ thống trước một hacker thực tế trên Internet không có thông tin nội bộ."
+      }
+    ]
+  },
+  {
+    "id": "chuyen-de-5",
+    "title": "Chuyên đề 5: Đề thi thử Tổng hợp Cuối kỳ (Chuẩn Phenikaa PKA)",
+    "description": "Đề thi mô phỏng đề thi kết thúc học phần với cấu trúc câu hỏi trải đều toàn bộ chương trình: CIA, OWASP, Mật mã, An ninh mạng và Hệ điều hành.",
+    "badge": "46 câu hỏi",
+    "questions": [
+      {
+        "id": 501,
+        "question": "Mô hình an toàn thông tin CIA đặt mục tiêu hàng đầu là bảo vệ 3 thuộc tính nào?",
+        "options": [
+          "Confidentiality, Integrity, Availability",
+          "Control, Identity, Access",
+          "Certainty, Immunity, Accuracy",
+          "Compliance, Integration, Authorization"
+        ],
+        "answer": 0,
+        "explanation": "Bí mật (Confidentiality) - Toàn vẹn (Integrity) - Sẵn sàng (Availability)."
+      },
+      {
+        "id": 502,
+        "question": "Mã độc tống tiền Ransomware WannaCry năm 2017 lây lan thần tốc trên toàn cầu nhờ khai thác lỗ hổng nào trong hệ điều hành Windows?",
+        "options": [
+          "Lỗ hổng giao thức SMBv1 (EternalBlue)",
+          "Lỗ hổng trình duyệt Internet Explorer",
+          "Lỗ hổng trong phần mềm gõ tiếng Việt",
+          "Lỗ hổng bàn phím không dây"
+        ],
+        "answer": 0,
+        "explanation": "WannaCry khai thác lỗ hổng EternalBlue (MS17-010) trong giao thức chia sẻ file SMBv1 của Windows để tự động quét và lây lan trong mạng LAN không cần người dùng thao tác."
+      },
+      {
+        "id": 503,
+        "question": "Hàm băm SHA-256 tạo ra chuỗi băm có kích thước chính xác là bao nhiêu bit?",
+        "options": [
+          "128 bit",
+          "160 bit",
+          "256 bit (tương đương 64 ký tự Hexadecimal)",
+          "512 bit"
+        ],
+        "answer": 2,
+        "explanation": "SHA-256 luôn cho ra kết quả 256 bit = 32 byte = 64 ký tự hex."
+      },
+      {
+        "id": 504,
+        "question": "Kiểu tấn công nào sau đây là hình thức tấn công vào tính toàn vẹn (Integrity) của dữ liệu?",
+        "options": [
+          "Nghe lén lưu lượng mạng (Sniffing)",
+          "Sửa đổi số dư tài khoản trong cơ sở dữ liệu trái phép",
+          "Làm tràn ngập băng thông máy chủ bằng UDP flood",
+          "Đoán mật khẩu bằng từ điển"
+        ],
+        "answer": 1,
+        "explanation": "Sửa đổi nội dung dữ liệu trái phép là vi phạm trực tiếp tính toàn vẹn (Integrity)."
+      },
+      {
+        "id": 505,
+        "question": "Kỹ thuật phòng thủ nào giúp máy chủ ứng dụng web nhận biết và chặn đứng các cuộc tấn công SQL Injection và XSS ở tầng mạng/ứng dụng?",
+        "options": [
+          "WAF (Web Application Firewall)",
+          "Bộ định tuyến Router thông thường",
+          "Mạng riêng ảo VPN",
+          "Máy chủ DHCP"
+        ],
+        "answer": 0,
+        "explanation": "WAF chuyên kiểm tra và phân tích lưu lượng HTTP/HTTPS ở tầng Layer 7 để phát hiện các mẫu tấn công ứng dụng web như SQLi, XSS, RFI..."
+      },
+      {
+        "id": 506,
+        "question": "Để bảo vệ mật khẩu lưu trữ trong hệ thống cơ sở dữ liệu sinh viên Phenikaa, phương án nào sau đây là chuẩn mực nhất?",
+        "options": [
+          "Băm bằng thuật toán SHA-256 thông thường không có Salt",
+          "Băm bằng thuật toán Bcrypt hoặc Argon2 kết hợp với chuỗi Salt ngẫu nhiên và Work factor thích hợp",
+          "Mã hóa đối xứng bằng AES và lưu khóa giải mã ngay trong file config",
+          "Lưu dưới dạng văn bản thuần để dễ kiểm tra"
+        ],
+        "answer": 1,
+        "explanation": "Bcrypt/Argon2 kèm Salt là tiêu chuẩn bảo mật mật khẩu hiện đại nhất chống crack bằng GPU/Rainbow table."
+      },
+      {
+        "id": 507,
+        "question": "Trong tấn công Reflected XSS, kịch bản khai thác thường bắt đầu bằng hành động nào?",
+        "options": [
+          "Kẻ tấn công lừa nạn nhân bấm vào một đường link chứa tham số độc hại (ví dụ qua email hoặc tin nhắn chat)",
+          "Kẻ tấn công hack trực tiếp vào phòng máy chủ",
+          "Kẻ tấn công cắt dây cáp mạng của nạn nhân",
+          "Nạn nhân cài đặt lại hệ điều hành Windows"
+        ],
+        "answer": 0,
+        "explanation": "Reflected XSS không lưu trên DB mà phản xạ ngay lập tức từ request của nạn nhân (thường qua URL có chứa payload JS)."
+      },
+      {
+        "id": 508,
+        "question": "Đặc điểm nào phân biệt mã hóa đối xứng và mã hóa bất đối xứng?",
+        "options": [
+          "Mã hóa đối xứng dùng chung 1 khóa, mã hóa bất đối xứng dùng cặp 2 khóa (Public & Private)",
+          "Mã hóa đối xứng không an toàn bằng mã hóa Base64",
+          "Mã hóa bất đối xứng chạy nhanh gấp 100 lần mã hóa đối xứng",
+          "Mã hóa đối xứng chỉ dùng cho các mạng quân sự"
+        ],
+        "answer": 0,
+        "explanation": "Đối xứng: 1 khóa bí mật duy nhất. Bất đối xứng: 2 khóa riêng biệt toán học liên kết với nhau."
+      },
+      {
+        "id": 509,
+        "question": "Mục đích chính của giao thức HTTPS (HTTP Secure) là:",
+        "options": [
+          "Tăng gấp đôi tốc độ duyệt web",
+          "Bảo vệ tính bí mật và tính toàn vẹn của dữ liệu trao đổi giữa trình duyệt và máy chủ thông qua giao thức mã hóa TLS",
+          "Tự động chặn các trang web có nội dung xấu",
+          "Ngăn chặn máy tính bị nhiễm virus từ USB"
+        ],
+        "answer": 1,
+        "explanation": "HTTPS mã hóa toàn bộ phiên làm việc qua TLS, chống nghe lén (Sniffing) và giả mạo (Tampering)."
+      },
+      {
+        "id": 510,
+        "question": "Cổng dịch vụ (Port) mặc định của SSH (Secure Shell) là bao nhiêu?",
+        "options": [
+          "Port 21",
+          "Port 22",
+          "Port 23",
+          "Port 80"
+        ],
+        "answer": 1,
+        "explanation": "SSH chạy ở port 22. (Port 21 là FTP, 23 là Telnet, 80 là HTTP)."
+      },
+      {
+        "id": 511,
+        "question": "Lỗ hổng nào cho phép kẻ tấn công đọc các file nhạy cảm trên hệ điều hành như `/etc/passwd` hoặc `C:\\Windows\\win.ini`?",
+        "options": [
+          "Local File Inclusion (LFI) / Path Traversal",
+          "Cross-Site Scripting (XSS)",
+          "Cross-Site Request Forgery (CSRF)",
+          "SYN Flood"
+        ],
+        "answer": 0,
+        "explanation": "LFI / Directory Traversal cho phép duyệt ngược cây thư mục để đọc các tệp tin hệ thống."
+      },
+      {
+        "id": 512,
+        "question": "Một người dùng nhận được cuộc gọi mạo danh cán bộ ngân hàng yêu cầu đọc mã OTP gửi về máy để 'hủy giao dịch lỗi'. Đây là hình thức tấn công:",
+        "options": [
+          "Vishing (Voice Phishing / Lừa đảo qua điện thoại)",
+          "Buffer Overflow",
+          "SQL Injection",
+          "ARP Poisoning"
+        ],
+        "answer": 0,
+        "explanation": "Vishing là hình thức lừa đảo Social Engineering qua các cuộc gọi điện thoại thoại (Voice Phishing)."
+      },
+      {
+        "id": 513,
+        "question": "Cơ chế bảo vệ nào giúp trình duyệt từ chối thực thi các script nằm ngoài danh sách tên miền được phê duyệt?",
+        "options": [
+          "CSP (Content Security Policy)",
+          "CORS (Cross-Origin Resource Sharing)",
+          "HSTS",
+          "X-Frame-Options"
+        ],
+        "answer": 0,
+        "explanation": "CSP định nghĩa chính sách bảo mật nội dung, chặn nạp mã độc từ các domain lạ."
+      },
+      {
+        "id": 514,
+        "question": "Phương pháp nào sau đây giúp phòng ngừa lỗi tràn bộ đệm (Buffer Overflow) trong ngôn ngữ C/C++?",
+        "options": [
+          "Sử dụng các hàm an toàn có kiểm tra giới hạn kích thước chuỗi như `strncpy`, `snprintf` thay vì `strcpy`, `sprintf`, `gets`",
+          "Tăng kích thước mảng lên 100 lần",
+          "Khởi động lại máy tính thường xuyên",
+          "Chỉ sử dụng biến con trỏ"
+        ],
+        "answer": 0,
+        "explanation": "Các hàm cũ như `gets()`, `strcpy()` không kiểm tra kích thước bộ đệm đích, dễ dẫn đến tràn bộ nhớ. Cần dùng các hàm có kiểm soát độ dài biên."
+      },
+      {
+        "id": 515,
+        "question": "Cơ chế xác thực Kerberos sử dụng khái niệm cốt lõi nào để cho phép người dùng đăng nhập một lần (SSO)?",
+        "options": [
+          "Vé xác thực (Ticket / Ticket-Granting Ticket - TGT)",
+          "Mật khẩu lưu trong file văn bản",
+          "Địa chỉ MAC của máy in",
+          "Mã QR code in trên thẻ sinh viên"
+        ],
+        "answer": 0,
+        "explanation": "Kerberos dựa trên hệ thống cấp vé (Tickets) từ Trung tâm phân phối khóa KDC (Key Distribution Center) để chứng minh danh tính với các dịch vụ."
+      },
+      {
+        "id": 516,
+        "question": "Một chứng chỉ SSL/TLS đã hết hạn nhưng quản trị viên quên gia hạn. Người dùng truy cập sẽ nhận được cảnh báo gì trên trình duyệt?",
+        "options": [
+          "Cảnh báo kết nối không an toàn / Cảnh báo bảo mật chứng chỉ số (Your connection is not private / Security Warning)",
+          "Máy tính tự động khởi động lại",
+          "Trang web tự động chuyển sang trang tìm kiếm Google",
+          "Tốc độ mạng bị giảm 50%"
+        ],
+        "answer": 0,
+        "explanation": "Trình duyệt kiểm tra trường 'Valid to' trong chứng chỉ X.509. Nếu đã quá hạn, trình duyệt sẽ chặn và cảnh báo đỏ ngay lập tức."
+      },
+      {
+        "id": 517,
+        "question": "Trong quản trị hệ điều hành Linux, câu lệnh nào được dùng để thay đổi chủ sở hữu của một tệp tin?",
+        "options": [
+          "chown",
+          "chmod",
+          "chgrp",
+          "passwd"
+        ],
+        "answer": 0,
+        "explanation": "`chown` (Change Owner) dùng đổi người sở hữu, `chmod` (Change Mode) dùng đổi quyền đọc/ghi/thực thi."
+      },
+      {
+        "id": 518,
+        "question": "Lỗ hổng Broken Authentication (Xác thực bị phá vỡ) thường bao gồm các yếu tố nào?",
+        "options": [
+          "Cho phép mật khẩu yếu, không chống brute-force, để lộ Session ID trên URL, phiên không hết hạn sau khi đăng xuất",
+          "Máy chủ cài đặt hệ điều hành Ubuntu",
+          "Sử dụng giao thức kết nối IPv6",
+          "Trang web có quá nhiều sinh viên đăng nhập cùng lúc"
+        ],
+        "answer": 0,
+        "explanation": "Broken Authentication liên quan đến mọi sai sót trong quy trình quản lý danh tính và phiên người dùng."
+      },
+      {
+        "id": 519,
+        "question": "Loại tường lửa nào có thể đọc và phân tích dữ liệu lên tới Tầng ứng dụng (Layer 7) để kiểm soát các hành vi như chặn chat, chặn tải file torrent?",
+        "options": [
+          "Next-Generation Firewall (NGFW) / Application Firewall",
+          "Tường lửa lọc gói tin không trạng thái (Packet filter layer 3)",
+          "Hub mạng",
+          "Card mạng rời"
+        ],
+        "answer": 0,
+        "explanation": "NGFW và Application Firewall hiểu được các giao thức tầng ứng dụng (L7) và nhận diện được ứng dụng thực tế bất kể nó chạy trên cổng nào."
+      },
+      {
+        "id": 520,
+        "question": "Kỹ thuật 'Canary' trong bảo vệ bộ nhớ Stack của chương trình có vai trò gì?",
+        "options": [
+          "Đặt một giá trị bí mật (Stack Canary) ngay trước con trỏ lệnh trả về (Return Address). Nếu giá trị này bị thay đổi khi hàm kết thúc, chương trình sẽ ngắt ngay để chống tràn bộ đệm",
+          "Tăng tốc độ xử lý của CPU",
+          "Phát âm thanh cảnh báo khi có virus",
+          "Mã hóa các file trong ổ cứng"
+        ],
+        "answer": 0,
+        "explanation": "Stack Canary giống chú chim hoàng yến trong hầm than: nếu kẻ tấn công tràn bộ đệm đè lên Return Address, giá trị Canary sẽ bị sai lệch trước, giúp phát hiện tấn công ngay."
+      },
+      {
+        "id": 521,
+        "question": "Khi lập trình ứng dụng Web bằng Java / Spring Boot, việc sử dụng thư viện Spring Security hỗ trợ phòng chống mặc định các lỗ hổng nào?",
+        "options": [
+          "CSRF protection, Session Fixation, Clickjacking (X-Frame-Options), XSS headers",
+          "Làm mát phần cứng máy chủ",
+          "Tự động tăng băng thông Internet",
+          "Sửa lỗi chính tả trong cơ sở dữ liệu"
+        ],
+        "answer": 0,
+        "explanation": "Spring Security mặc định kích hoạt bảo vệ chống CSRF, chống Session Fixation, cấu hình các header an ninh như HSTS, X-Content-Type-Options, X-Frame-Options."
+      },
+      {
+        "id": 522,
+        "question": "Hình thức tấn công nào sử dụng mạng máy tính ma để gửi hàng loạt yêu cầu HTTP giả mạo nhằm làm sập máy chủ web gọi là:",
+        "options": [
+          "HTTP Flood (Tầng 7 DDoS)",
+          "SQL Injection",
+          "Cross-Site Scripting",
+          "Buffer Overflow"
+        ],
+        "answer": 0,
+        "explanation": "HTTP Flood là một dạng tấn công DDoS tầng ứng dụng (Layer 7), bắt chước lưu lượng truy cập thực tế của người dùng để làm kiệt quệ tài nguyên web server."
+      },
+      {
+        "id": 523,
+        "question": "Hệ thống xác thực một lần (SSO - Single Sign-On) phổ biến hiện nay sử dụng các giao thức tiêu chuẩn nào?",
+        "options": [
+          "OAuth 2.0 / OpenID Connect (OIDC) và SAML",
+          "FTP và Telnet",
+          "SMTP và POP3",
+          "SNMP và ICMP"
+        ],
+        "answer": 0,
+        "explanation": "OAuth 2.0 (Ủy quyền), OpenID Connect (Định danh xác thực) và SAML 2.0 là các chuẩn công nghiệp cho SSO hiện đại (Google Login, Microsoft Login...)."
+      },
+      {
+        "id": 524,
+        "question": "Khái niệm 'Principle of Least Astonishment' trong thiết kế giao diện và logic bảo mật có ý nghĩa là:",
+        "options": [
+          "Hệ thống phải hoạt động theo cách ít gây bất ngờ hoặc khó hiểu nhất cho người dùng, phản ánh đúng kỳ vọng hành vi thông thường",
+          "Tạo ra các thông báo giật gân để dọa người dùng",
+          "Bảo mật phải được giấu kín không ai hay biết",
+          "Giao diện phần mềm phải có nhiều hình ảnh hoạt hình"
+        ],
+        "answer": 0,
+        "explanation": "Thiết kế bảo mật phải trực quan và tự nhiên, nếu cơ chế quá phức tạp hay gây bất ngờ, người dùng sẽ tìm cách lách qua rào cản bảo mật."
+      },
+      {
+        "id": 525,
+        "question": "Đặc điểm nhận biết một cuộc tấn công Blind SQL Injection (SQL Injection mù) là:",
+        "options": [
+          "Ứng dụng không hiển thị lỗi cơ sở dữ liệu hoặc dữ liệu trả về trực tiếp trên màn hình, kẻ tấn công phải suy luận qua câu hỏi Đúng/Sai (Boolean-based) hoặc độ trễ thời gian (Time-based)",
+          "Màn hình máy tính của nạn nhân bị đen xì không nhìn thấy gì",
+          "Tấn công chỉ thực hiện được vào ban đêm",
+          "Tấn công không dùng bàn phím"
+        ],
+        "answer": 0,
+        "explanation": "Blind SQLi xảy ra khi web không in kết quả SQL ra màn hình. Hacker chèn hàm `sleep(5)` hoặc điều kiện boolean để suy đoán từng ký tự dữ liệu."
+      },
+      {
+        "id": 526,
+        "question": "Cơ chế mã hóa đầu cuối (End-to-End Encryption - E2EE) trong các ứng dụng nhắn tin (như Zalo, Signal, Telegram Secret) đảm bảo điều gì?",
+        "options": [
+          "Chỉ người gửi và người nhận có thể đọc được tin nhắn, ngay cả nhà cung cấp dịch vụ máy chủ cũng không thể giải mã được",
+          "Tin nhắn được gửi đi nhanh gấp 10 lần",
+          "Tin nhắn tự động biến mất sau 1 giây",
+          "Không cần có kết nối mạng vẫn gửi được tin nhắn"
+        ],
+        "answer": 0,
+        "explanation": "E2EE lưu giữ khóa giải mã duy nhất trên thiết bị đầu cuối của người dùng. Dữ liệu đi qua máy chủ trung gian chỉ là bản mã không thể giải mã."
+      },
+      {
+        "id": 527,
+        "question": "Chữ viết tắt CVE trong ngành an toàn thông tin là viết tắt của:",
+        "options": [
+          "Common Vulnerabilities and Exposures (Danh mục các lỗ hổng và điểm yếu an toàn thông tin phổ biến)",
+          "Central Virus Engine",
+          "Computer Verification Entity",
+          "Cyber Vulnerability Evaluation"
+        ],
+        "answer": 0,
+        "explanation": "CVE là từ điển quốc tế định danh các lỗ hổng an ninh đã biết (ví dụ: CVE-2021-44228 cho lỗ hổng Log4j)."
+      },
+      {
+        "id": 528,
+        "question": "Hệ thống thang điểm CVSS (Common Vulnerability Scoring System) dùng để đánh giá điều gì?",
+        "options": [
+          "Mức độ nghiêm trọng và tác động rủi ro của một lỗ hổng bảo mật trên thang điểm từ 0.0 đến 10.0",
+          "Tốc độ gõ phím của chuyên gia pentest",
+          "Dung lượng bộ nhớ của phần mềm diệt virus",
+          "Chất lượng đồ họa của trang web"
+        ],
+        "answer": 0,
+        "explanation": "CVSS v3/v4 chấm điểm từ 0 đến 10 (Low: 0.1-3.9, Medium: 4.0-6.9, High: 7.0-8.9, Critical: 9.0-10.0) dựa trên độ khó khai thác và phạm vi thiệt hại."
+      },
+      {
+        "id": 529,
+        "question": "Để bảo mật máy chủ cơ sở dữ liệu MySQL/PostgreSQL trong thực tế, hành động nào sau đây là BẮT BUỘC?",
+        "options": [
+          "Không mở cổng database (3306, 5432) công khai ra Internet; chỉ cho phép kết nối nội bộ từ IP của Web Server và đặt mật khẩu phức tạp",
+          "Đặt tên đăng nhập và mật khẩu là root/root để dễ nhớ",
+          "Mở cổng 3306 ra toàn thế giới để thuận tiện làm việc ở nhà",
+          "Không cần phân quyền người dùng trong database"
+        ],
+        "answer": 0,
+        "explanation": "Database tuyệt đối không mở port ra Internet công cộng. Cần chặn bằng Firewall, bind vào `127.0.0.1` hoặc IP mạng nội bộ riêng."
+      },
+      {
+        "id": 530,
+        "question": "Kỹ thuật 'Sanitization' (Khử độc / Làm sạch) dữ liệu đầu vào khác với 'Validation' (Kiểm thực) ở điểm nào?",
+        "options": [
+          "Validation kiểm tra xem dữ liệu có đúng định dạng mong đợi hay không (và từ chối nếu sai); Sanitization sửa đổi/loại bỏ các ký tự nguy hiểm khỏi dữ liệu trước khi xử lý",
+          "Validation chỉ dùng cho số, Sanitization chỉ dùng cho chữ",
+          "Sanitization là xóa hoàn toàn dữ liệu của người dùng",
+          "Không có điểm khác biệt"
+        ],
+        "answer": 0,
+        "explanation": "Validation: 'Email này có hợp lệ không? Không hợp lệ thì báo lỗi'. Sanitization: 'Chuỗi này có thẻ script không? Lọc bỏ thẻ script hoặc chuyển thành thực thể HTML an toàn'."
+      },
+      {
+        "id": 531,
+        "question": "Trong kiến trúc vi dịch vụ (Microservices), cơ chế nào thường được dùng để truyền thông tin xác thực và phân quyền giữa các dịch vụ một cách phi trạng thái (Stateless)?",
+        "options": [
+          "JSON Web Token (JWT)",
+          "Session lưu trong file txt",
+          "Lưu trong clipboard của Windows",
+          "Gửi mật khẩu dạng rõ trong header"
+        ],
+        "answer": 0,
+        "explanation": "JWT chứa phần Header, Payload và Signature. Các microservice có thể tự xác minh chữ ký của token mà không cần truy vấn cơ sở dữ liệu tập trung."
+      },
+      {
+        "id": 532,
+        "question": "Tấn công 'Dictionary Attack' (Tấn công từ điển) hiệu quả hơn tấn công Brute-force vét cạn thuần túy vì:",
+        "options": [
+          "Tập trung thử các từ ngữ, cụm từ và mật khẩu phổ biến nhất mà con người hay đặt (như 123456, password, qwerty) thay vì thử ngẫu nhiên toàn bộ tổ hợp ký tự",
+          "Có thể đoán đúng mật khẩu dài 30 ký tự ngẫu nhiên trong 1 giây",
+          "Tự động hack được máy chủ mà không cần mạng",
+          "Chỉ áp dụng được với từ điển tiếng Anh"
+        ],
+        "answer": 0,
+        "explanation": "Con người có xu hướng đặt mật khẩu theo từ có nghĩa hoặc các mẫu quen thuộc. Tấn công từ điển tiết kiệm hàng nghìn lần thời gian so với vét cạn toàn bộ ký tự."
+      },
+      {
+        "id": 533,
+        "question": "Phương thức HTTP nào được coi là 'Idempotent' (Bảo toàn trạng thái khi gọi lặp lại nhiều lần)?",
+        "options": [
+          "GET, PUT, DELETE",
+          "POST",
+          "PATCH khi tính toán gia số",
+          "CONNECT"
+        ],
+        "answer": 0,
+        "explanation": "Idempotent nghĩa là thực hiện thao tác 1 lần hay n lần đều tạo ra kết quả giống nhau trên máy chủ (như GET lấy dữ liệu, PUT ghi đè tài nguyên cụ thể, DELETE xóa)."
+      },
+      {
+        "id": 534,
+        "question": "Một ứng dụng lưu trữ Token bí mật (API Key) ngay trong mã nguồn công khai trên GitHub. Đây là ví dụ của lỗi bảo mật nào?",
+        "options": [
+          "Hardcoded Credentials (Cố định thông tin nhạy cảm trong mã nguồn)",
+          "SQL Injection",
+          "Buffer Overflow",
+          "CSRF"
+        ],
+        "answer": 0,
+        "explanation": "Hardcoded Credentials là sai lầm phổ biến khi lập trình viên commit mã nguồn chứa API key, mật khẩu DB lên kho lưu trữ công cộng. Cần dùng biến môi trường (.env)."
+      },
+      {
+        "id": 535,
+        "question": "Khi người dùng nhấn đăng xuất (Logout), hệ thống web cần thực hiện điều gì để bảo mật phiên?",
+        "options": [
+          "Hủy phiên làm việc trên máy chủ (Invalidate session), xóa cookie phiên ở client và thu hồi token (nếu dùng JWT blacklist/refresh token revocation)",
+          "Chỉ cần ẩn nút đăng xuất",
+          "Giữ nguyên phiên để người dùng vào lại không cần gõ mật khẩu",
+          "Tắt nguồn máy chủ web"
+        ],
+        "answer": 0,
+        "explanation": "Đăng xuất phải vô hiệu hóa phiên ở cả 2 phía Client và Server. Nếu server không hủy session, Session ID cũ vẫn có thể bị kẻ gian dùng tiếp."
+      },
+      {
+        "id": 536,
+        "question": "Tại sao việc sử dụng thuật toán mã hóa MD5 để băm mật khẩu hiện nay bị coi là một lỗ hổng nghiêm trọng?",
+        "options": [
+          "Vì MD5 quá nhanh và đã bị bẻ khóa va chạm (Collision); các bảng Rainbow Table cho MD5 có sẵn trên mạng cho phép tra ngược mật khẩu trong vài mili-giây",
+          "Vì MD5 chỉ chạy được trên hệ điều hành 32-bit",
+          "Vì thuật toán MD5 đòi hỏi phí bản quyền cao",
+          "Vì MD5 chỉ băm được chữ cái không băm được số"
+        ],
+        "answer": 0,
+        "explanation": "MD5 được thiết kế từ năm 1991, tốc độ tính toán quá nhanh (hàng tỷ hash/giây trên GPU) và không có salt mặc định, hoàn toàn không phù hợp cho băm mật khẩu."
+      },
+      {
+        "id": 537,
+        "question": "Nguyên tắc 'Privacy by Design' (Bảo mật quyền riêng tư ngay từ khâu thiết kế) yêu cầu:",
+        "options": [
+          "Thu thập càng nhiều thông tin cá nhân của người dùng càng tốt để bán cho bên thứ ba",
+          "Chỉ thu thập dữ liệu cá nhân tối thiểu cần thiết cho nghiệp vụ (Data Minimization) và bảo vệ an toàn cho dữ liệu đó trong suốt vòng đời",
+          "Không cho người dùng xem dữ liệu của chính họ",
+          "Bảo mật quyền riêng tư chỉ áp dụng sau khi sản phẩm đã phát hành 1 năm"
+        ],
+        "answer": 1,
+        "explanation": "Privacy by Design và Data Minimization yêu cầu chỉ lưu những gì bắt buộc phải lưu. Dữ liệu không thu thập là dữ liệu không bao giờ bị rò rỉ."
+      },
+      {
+        "id": 538,
+        "question": "Tấn công 'Man-in-the-Cloud' là dạng tấn công như thế nào?",
+        "options": [
+          "Kẻ tấn công đánh cắp các Token đồng bộ hóa dịch vụ đám mây (Google Drive, OneDrive, Dropbox) của nạn nhân để bí mật truy cập và lấy cắp dữ liệu mà không cần mật khẩu",
+          "Tấn công vào các trạm phát sóng thời tiết",
+          "Làm máy bay không người lái bị rơi",
+          "Tấn công làm mất kết nối internet khi trời mưa bão"
+        ],
+        "answer": 0,
+        "explanation": "Man-in-the-Cloud lợi dụng token đồng bộ file đám mây lưu trên máy nạn nhân để trích xuất dữ liệu tự động mà không kích hoạt cảnh báo đổi mật khẩu."
+      },
+      {
+        "id": 539,
+        "question": "Giao thức nào sau đây truyền tải thông tin đăng nhập và mật khẩu hoàn toàn dưới dạng văn bản rõ (Cleartext) và KHÔNG ĐƯỢC PHÉP sử dụng trong môi trường sản xuất?",
+        "options": [
+          "Telnet và HTTP (không mã hóa)",
+          "SSH",
+          "HTTPS",
+          "SFTP"
+        ],
+        "answer": 0,
+        "explanation": "Telnet và HTTP truyền plaintext. Bất kỳ ai bắt gói tin bằng Wireshark trên mạng Wi-Fi/LAN đều đọc được mật khẩu và dữ liệu trong vài giây."
+      },
+      {
+        "id": 540,
+        "question": "Để trở thành một kỹ sư phát triển phần mềm an toàn (Secure Developer), tâm thế quan trọng nhất cần có là:",
+        "options": [
+          "Tin tưởng tuyệt đối vào mọi dữ liệu người dùng gửi lên",
+          "Tư duy phòng thủ chủ động: 'Không bao giờ tin tưởng đầu vào, luôn kiểm thực và kiểm soát quyền ở mọi tầng' (Never trust input, defense in depth)",
+          "Cho rằng bảo mật là trách nhiệm duy nhất của đội ngũ an ninh mạng (SecOps), lập trình viên chỉ cần chạy được tính năng",
+          "Chỉ quan tâm đến giao diện đẹp mắt"
+        ],
+        "answer": 1,
+        "explanation": "Tư duy 'All input is evil until proven otherwise' (Mọi dữ liệu đầu vào đều tiềm ẩn nguy hiểm cho đến khi được kiểm chứng) là cốt lõi của lập trình an toàn."
+      },
+      {
+        "id": 541,
+        "question": "Trong hệ thống xác thực và phân quyền hiện đại, sự khác biệt cốt lõi giữa giao thức OAuth 2.0 và OpenID Connect (OIDC) là gì?",
+        "options": [
+          "OAuth 2.0 phục vụ ủy quyền (Authorization) thông qua Access Token, còn OIDC là lớp mở rộng xây dựng trên OAuth 2.0 phục vụ định danh và xác thực người dùng (Authentication) thông qua ID Token (JWT).",
+          "OAuth 2.0 dùng cho ứng dụng di động, OIDC dùng cho máy tính bảng.",
+          "OAuth 2.0 mã hóa dữ liệu còn OIDC chỉ nén dữ liệu.",
+          "Cả hai giao thức này hoàn toàn giống nhau, chỉ khác tên gọi thương mại."
+        ],
+        "answer": 0,
+        "explanation": "OAuth 2.0 sinh ra để cấp quyền truy cập tài nguyên (ủy quyền - Authorization) không trao mật khẩu. OIDC bổ sung chuẩn nhận dạng người dùng (Authentication) phát hành ID Token chuẩn JWT chứa thông tin profile."
+      },
+      {
+        "id": 542,
+        "question": "Lỗ hổng nguy hiểm phổ biến liên quan đến JSON Web Token (JWT) cho phép kẻ tấn công sửa đổi nội dung payload và qua mặt kiểm tra chữ ký là gì?",
+        "options": [
+          "Kẻ tấn công sửa trường 'alg' trong header thành 'none' (None Algorithm Attack) hoặc khai thác Key Confusion đổi từ RS256 sang HS256 sử dụng Public Key của máy chủ làm Secret Key đối xứng.",
+          "Kẻ tấn công gửi JWT bằng giao thức UDP thay vì TCP.",
+          "Kẻ tấn công tăng kích thước file JWT vượt quá 100MB.",
+          "Kẻ tấn công mã hóa JWT hai lần bằng SHA-1."
+        ],
+        "answer": 0,
+        "explanation": "Tấn công 'alg: none' lợi dụng các thư viện kiểm tra JWT thiếu chặt chẽ chấp nhận token không cần ký. Tấn công Key Confusion lợi dụng việc thư viện dùng nhầm Public Key của server làm Secret Key đối xứng để tự ký tạo token hợp lệ giả mạo bất kỳ ai."
+      },
+      {
+        "id": 543,
+        "question": "Trong quy trình DevSecOps và kiểm thử tự động, kỹ thuật Phân tích thành phần phần mềm (SCA - Software Composition Analysis) có mục đích chính là gì?",
+        "options": [
+          "Quét và kiểm tra tự động mã nguồn, các thư viện phụ thuộc của bên thứ ba (Third-party dependencies / npm / pip / maven) để phát hiện các lỗ hổng đã công bố (CVE) và rủi ro bản quyền mở.",
+          "Kiểm tra hiệu năng render của card màn hình trên máy lập trình viên.",
+          "Tự động gửi email thông báo nghỉ phép cho kỹ sư kiểm thử.",
+          "Chuyển mã nguồn từ JavaScript sang Assembly để tăng tốc độ."
+        ],
+        "answer": 0,
+        "explanation": "Hầu hết các ứng dụng ngày nay sử dụng 80-90% thư viện mã nguồn mở. SCA (như Snyk, OWASP Dependency-Check, Trivy) giúp rà soát liên tục các thư viện có chứa CVE đã biết trong pipeline CI/CD."
+      },
+      {
+        "id": 544,
+        "question": "Cơ chế Rate Limiting (giới hạn tốc độ yêu cầu) thường được triển khai tại API Gateway hoặc Web Server nhằm mục đích chính nào?",
+        "options": [
+          "Tăng kích thước băng thông tải file của người dùng lên gấp đôi.",
+          "Ngăn chặn các cuộc tấn công Brute Force mật khẩu, Credential Stuffing, DoS tầng ứng dụng (L7) và hạn chế tình trạng spam/scraping dữ liệu trái phép.",
+          "Mã hóa toàn bộ cơ sở dữ liệu sau mỗi 5 giây.",
+          "Chuyển hướng toàn bộ người dùng sang trang web khác khi quá tải."
+        ],
+        "answer": 1,
+        "explanation": "Rate Limiting giới hạn số lượng request tối đa một địa chỉ IP hoặc một tài khoản có thể gửi trong một khoảng thời gian (sử dụng thuật toán Token Bucket hoặc Leaky Bucket), ngăn kẻ xấu vét cạn tài nguyên hoặc đoán mật khẩu."
+      },
+      {
+        "id": 545,
+        "question": "Kỹ thuật tấn công Blind SQL Injection (SQLi mù) dạng Time-based hoạt động dựa trên nguyên lý nào?",
+        "options": [
+          "Chèn các câu lệnh có hàm gây trễ thời gian phản hồi (như SLEEP() trong MySQL hoặc WAITFOR DELAY trong MS SQL) và đo thời gian máy chủ trả lời để suy luận từng ký tự của dữ liệu.",
+          "Sử dụng đồng hồ nguyên tử để làm chậm tốc độ truyền cáp quang của máy chủ.",
+          "Tấn công vào ngày lễ và giờ cao điểm để máy chủ bị nghẽn mạng.",
+          "Hiển thị trực tiếp toàn bộ bảng dữ liệu người dùng ra thông báo lỗi trên màn hình."
+        ],
+        "answer": 0,
+        "explanation": "Khi ứng dụng không in thông báo lỗi cũng không đổi nội dung hiển thị (Boolean Blind không dùng được), kẻ tấn công dùng Time-based Blind SQLi ép DB ngủ X giây nếu điều kiện đúng, qua đó trích xuất từng ký tự của dữ liệu."
+      },
+      {
+        "id": 546,
+        "question": "Mô hình kiểm soát truy cập dựa trên thuộc tính (ABAC - Attribute-Based Access Control) có ưu điểm vượt trội nào so với mô hình dựa trên vai trò (RBAC)?",
+        "options": [
+          "ABAC cho phép thiết lập chính sách ủy quyền linh hoạt, chi tiết (Fine-grained) dựa trên kết hợp các thuộc tính: người dùng (phòng ban, chức vụ), tài nguyên, hành động và ngữ cảnh môi trường (thời gian làm việc, vị trí địa lý, độ an toàn của thiết bị).",
+          "ABAC không cần xác thực người dùng mà cho phép mọi người truy cập tự do.",
+          "ABAC chỉ áp dụng được trên máy tính chạy hệ điều hành Windows XP.",
+          "ABAC loại bỏ hoàn toàn mật khẩu và chữ ký số trong toàn bộ tổ chức."
+        ],
+        "answer": 0,
+        "explanation": "Khác với RBAC chỉ cấp quyền theo Role cứng nhắc (dẫn đến bùng nổ vai trò - Role Explosion), ABAC đánh giá động các thuộc tính ngữ cảnh (ví dụ: chỉ cho phép bác sĩ xem bệnh án nếu đang trong ca trực và truy cập từ mạng nội bộ bệnh viện)."
+      }
+    ]
+  }
+]
