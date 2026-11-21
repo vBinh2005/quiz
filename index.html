@@ -591,6 +591,7 @@
 
   <!-- CORE APPLICATION JAVASCRIPT -->
   <script>
+    const optionLabels = ['A', 'B', 'C', 'D'];
     /**
      * Web Audio API Synthesizer (No external mp3 assets required)
      */
@@ -1033,6 +1034,8 @@
       handleAnswerSelect(chosenIdx) {
         if (this.hasAnsweredCurrent) return;
         this.hasAnsweredCurrent = true;
+
+        const optionLabels = ['A', 'B', 'C', 'D'];
 
         const isCorrect = (chosenIdx === this.currentQ.answer);
         const qId = this.currentQ.id;
